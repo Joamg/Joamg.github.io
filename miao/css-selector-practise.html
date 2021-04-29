@@ -13,7 +13,7 @@
     <p class="er">红色</p>
     <p class="abb" tabindex="1">鼠标悬浮时为红色，按下去时为绿色，获得焦点时为蓝色</p>
 
-    <p class="abc">
+    <p class="abcD">
       <span>
         红色
         <span>绿色</span>
@@ -62,7 +62,16 @@
 
 
     <style>
-
+  .b ul li:nth-child(-n+25) {
+  color: red;
+  }
+  .b ul li:nth-child(n+35):not(:nth-child(n+51))
+   {
+  color: blue;
+  }
+  .b ul li:nth-child(n+65) {
+  color: green;
+  }
     </style>
     <div class="b">
       <p>让25及以内的元素为红色</p>
@@ -175,7 +184,9 @@
     <hr>
 
     <style>
+      .prime li:nth-child(){
 
+      }
     </style>
     <div class="prime">
       <p>让所有的质/素数(prime)（2，3，5，7，11，13……）跟合数（4，6，8，9，10……）为不同的颜色</p>

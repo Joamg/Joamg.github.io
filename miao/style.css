@@ -41,16 +41,17 @@ color: green;
   }
 
 
-  li:nth-child(4) {
+  .a li:nth-child(4) {
     color: red;
   }
-  ul li:nth-child(5) {
+  .a li:nth-child(5) {
       color: red;
   }
-  ul li:nth-child(6) {
+  .a li:nth-child(6) {
     color: red;
 }
-  ul li:nth-child(7) {
+  .a li:nth-child(7) {
   color: red;
 
 
++
