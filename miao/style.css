@@ -1,4 +1,4 @@
-[class="er"] {
+  body > p:first-child {
   color: red;
 }
 
@@ -22,36 +22,50 @@ color: green;
       color: blue;
     }
 
-
-    [class="lj"]:link{
+    a:link{
     color: pink;
   }
 
-  [class="lj"]:visited {
+    a:visited {
     color: orange;
   }
-  [class="mll"] {
+  a[href^="mailto:"] {
     color: blue;
   }
-  [class="phone"] {
+  a[href^="MAILTO:"] {
+    color: blue;
+  }
+  a[href^="tel:"] {
     color: yellow;
   }
-  [class="df"] {
+  a[href$=".pdf"] {
     font-size: 30px;
   }
+  .b ul li:nth-child(-n+25) {
+    color: red;
+    }
+    .b ul li:nth-child(n+35):not(:nth-child(n+51))
+     {
+    color: blue;
+    }
+    .b ul li:nth-child(n+65) {
+    color: green;
+    }
 
-
-  .a li:nth-child(4) {
+  div.a li:nth-child(n+4):nth-child(-n+7) {
     color: red;
   }
-  .a li:nth-child(5) {
-      color: red;
-  }
-  .a li:nth-child(6) {
+
+
+  .prime li {
     color: red;
+  }   
+  .prime li:first-child {
+  color: black;
 }
-  .a li:nth-child(7) {
-  color: red;
-
-
-+
+.prime li:nth-child(2n + 4),
+.primeli:nth-child(3n + 6),
+.prime li:nth-child(5n + 10),
+.prime li:nth-child(7n + 14) {
+  color:green;
+}
