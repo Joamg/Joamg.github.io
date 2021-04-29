@@ -1,0 +1,56 @@
+[class="er"] {
+  color: red;
+}
+
+  [class="abb"]:focus {
+  color: blue;
+    }
+  [class="abb"]:hover {
+color: red;
+    }
+  [class="abb"]:active {
+color: green;
+    }
+
+    p span {
+      color: red;
+    }
+    p span :nth-child(1) {
+      color: green;
+    }
+    p span :last-child {
+      color: blue;
+    }
+
+
+    [class="lj"]:link{
+    color: pink;
+  }
+
+  [class="lj"]:visited {
+    color: orange;
+  }
+  [class="mll"] {
+    color: blue;
+  }
+  [class="phone"] {
+    color: yellow;
+  }
+  [class="df"] {
+    font-size: 30px;
+  }
+
+
+  li:nth-child(4) {
+    color: red;
+  }
+  ul li:nth-child(5) {
+      color: red;
+  }
+  ul li:nth-child(6) {
+    color: red;
+}
+  ul li:nth-child(7) {
+  color: red;
+
+

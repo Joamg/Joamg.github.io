@@ -19,7 +19,7 @@
   <a href="https://jd.com" target="_blank">在新窗口打开京东</a>
   <a href="mailto:xxx@qq.com">点我发邮件</a>
   <a href="#页面底部">跳到页面底部</a>
-  <a href="a.html">点我下载文件</a>
+  <a href="img.png" name="download">点我下载文件</a>
 
   <div>
   <img src="https://drscdn.500px.org/photo/229389427/m%3D1170/v2?user_id=7012987&webp=true&sig=196fa0c161aa562478d08571764872f7d69a346c3c0b2e12aa00e2c6414eb28b" alt="图片" width=260px height=390px>
@@ -31,7 +31,7 @@
     <marquee behavior="" direction="">飘~~~~</marquee>
     这几种强调<strong>有什么区别呢?</strong> 
     <u>这个呢</u> <i>这个呢?</i></br>
-    <!--这段注释需要出现在页面里面-->
+    &lt;!-- 这段注释需要出现在页面里面 --> <br>
     html的注释怎么写
   </div>
   <div>
@@ -73,22 +73,23 @@
       <dd>小明</dd>
       <dd>豆豆</dd>
   <hr>
-    <h3>Google搜索</h3> </br>
+    <h1>Google搜索</h1> </br>
   <form action="https://www.google.com/search" target="_blank" >
       <input type="text" name="q"> 
       <button>在新窗口打开谷歌</button>
       <hr>
       <p>个人信息调查表</p>
-      <dl>性别
+      <dl>
+        <dt>性别</dt>
         <dd>
           <label><input type="radio" name="性别">男</label>
           <label><input type="radio" name="性别">女</label>
         </dd>
       </dl>
-    <label for="年龄">年龄:</label>
       <dl>
+        <dt>年龄</dt>
         <dd>
-        <select name="年龄" id="年龄">
+        <select name="age" id="年龄">
           <option hidden>请选择</option>
           <optgroup label="少年">
             <option value="少年">1到6岁</option>
@@ -104,34 +105,38 @@
         </dd>
         </dl>
 
-      <dl>生日
+      <dl>
+        <dt>生日</dt>
         <dd>
         <input type="date">
       </dd>
     </dl>
 
-    <dl>生日
+    <dl>
+      <dt>生辰</dt>
       <dd>
         <input type="time">
       </dd>
     </dl>
 
-    <dl>照片
+    <dl>
+      <dt>照片</dt>
       <dd>
-        <label><input type="file" hidden accept="image/*"> 点我上传文件, 我比文件上传按钮好看 </label>
+        <label>
+          <input type="file" name="picture "hidden accept="image/*"> 点我上传文件, 我比文件上传按钮好看 
+        </label>
       </dd>
     </dl>
 
-    <dl>肤色
+    <dl>
+      <dt>肤色</dt>
       <dd>
         <dl><input type="color"></dl>
       </dd>
     </dl>
 
       <p>自我介绍</p>
-        <textarea name="" id="" cols="30" rows="10">
-          &lt/textarea>
-        </textarea>
+        <textarea name="" id="" cols="30" rows="10">&lt/textarea></textarea>
       <fieldset  disabled>
       <legend>
         这里面的全都禁用了
@@ -141,8 +146,8 @@
         <input type="text">
         <input type="text">
       </fieldset> <br>
-      <input type="submit">
-      <input type="reset">
+      <button type="submit">提交</button>
+      <button type="reset">重置</button>
     </form>
 
   <table border="1">
