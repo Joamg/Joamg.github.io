@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body, html {
+      xmargin: 0;
+      height: 100%;
+      box-sizing: border-box;
+      vertical-align: top;
+    }
+    div {
+      height: 100%;
+      font-size: 0;
+    }
+    section {
+      font-size: 16 px;
+    }
+    .a1, .a2, .a3, .a4 {
+      box-sizing: border-box;
+      width: 150px;
+      height:100%;
+      border-right: 1px solid red;
+    }    
+    .a2 {
+      margin-left: 150px;
+      margin-top: -620px;
+      width: calc(100% - 450px);
+    }
+    .a3 {
+      margin-left: 300px;
+      margin-top: -640px;
+      width: calc(100% - 450px);
+    }
+    .a4{
+      margin-left:450px;
+      margin-top: -640px;
+      width: calc(100% - 450px);
+    }
+    header {
+      height: 100px;
+      box-sizing: border-box;
+      border-bottom: 1px solid red;
+    }
+    main {
+      height: calc(100% - 100px);
+      xoverflow: scroll;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <section class="a1"></section>
+    <section class="a2">
+      <header></header>
+      <main></main>
+    </section>
+    <section class="a3"></section>
+    <section class="a4"></section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body , html {
+      margin: 0;
+      height: 100%;
+    }
+    div {
+      height: 100%;
+      font-size: 0%;
+    }
+    header {
+      display: inline-block;
+      background-color: red;
+      width:100%;
+      height: 80px;
+      vertical-align: top;
+    }
+    aside {
+      display: inline-block;
+      background-color: lightgreen;
+      width: 100px;
+      height: calc(100% - 80px);
+      vertical-align: top;
+    }
+    main {
+      display: inline-block;
+      background-color: #f7891a;
+      width: calc(100% - 100px);
+      height: calc(100% - 80px);
+      overflow: scroll;
+      height: 800px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <header></header>
+    <aside>aa</aside>
+    <main></main>
+  </div>
+</body>
+</html>

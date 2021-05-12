@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body, html {
+      margin: 0;
+      height: 100%;
+      box-sizing: border-box;
+    }
+    * {
+      box-sizing: inherit;
+    }
+    div {
+      height: 100%;
+      font-size: 0;
+    }
+    section {
+      display: inline-block;
+      font-size: 16 px;
+    }
+    .a1, .a2, .a3, .a4 {
+      box-sizing: border-box;
+      width: 150px;
+      height:100%;
+      border-right: 1px solid red;
+    }    
+    .a2 {
+      width: calc(100% - 450px);
+    }
+    header {
+      height: 100px;
+      box-sizing: border-box;
+      border-bottom: 1px solid red;
+    }
+    main {
+      height: calc(100% - 100px);
+      overflow: scroll;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <section class="a1"></section>
+    <section class="a2">
+      <header></header>
+      <main></main>
+    </section>
+    <section class="a3"></section>
+    <section class="a4"></section>
+  </div>
+</body>
+</html>
