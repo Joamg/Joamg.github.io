@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE =edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0 ;
+    }
+    ul {
+      margin: 0px;
+      padding: 0em;
+      list-style: none;
+      left: 20px;
+    }
+
+    ul.menu > li {
+      display: inline-block;
+    }
+    li {
+      white-space: nowrap;
+      position: relative;
+    }
+    ul ul {
+      display: none;
+      position: absolute;
+      left: 0%;
+      top: 100%;
+    } 
+    ul.menu ul ul {
+      left: 100%;
+      top: 0;
+    }
+    li:hover > ul {
+      display: block;
+    }
+    li:hover {
+      background-color: #f36c1955;
+    }
+    ul.menu ul li:hover > ul {
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <ul class="menu">
+    <li>文件
+      <ul>
+        <li>保存</li>
+        <li>格式
+          <ul>
+            <li>jpg</li>
+            <li>jpg</li>
+            <li>jpg</li>
+          </ul>
+        </li>
+        <li>另存为...
+          <ul>
+            <li>UTF-8
+              <ul>
+                <li>UTF-8</li>
+                <li>UTF-8</li>
+                <li>UTF-8</li>
+              </ul>
+            </li>
+            <li>UTF-8</li>
+            <li>UTF-8
+              <ul>
+                <li>UTF-8</li>
+                <li>UTF-8</li>
+                <li>UTF-8</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>选项 
+      <ul>
+        <li>1111
+          <ul>
+            <li>5555</li>
+            <li>5555</li>
+            <li>5555</li>
+            <li>5555</li>
+          </ul>
+        </li>
+        <li>2222</li>
+        <li>3333</li>
+      </ul>
+    </li>
+    <li>设置
+      <ul>
+        <li>4444</li>
+        <li>5555</li>
+        <li>6666</li>
+      </ul>
+    </li>
+  </ul>
+</body>
+
+</html>
