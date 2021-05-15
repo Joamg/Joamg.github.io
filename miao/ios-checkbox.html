@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    label {
+    div {
       margin: 0;
       padding: 0;
       width: 380px;
@@ -32,8 +32,8 @@
       border-radius:95px;
       background-color: #fff;
       position: relative;
-      top: -10px;
-      left: -383px;
+      top: 5px;
+      left: 5px;
       transition: 1s;
     }
     .round2 {
@@ -46,26 +46,27 @@
       left: 40px;
       border-radius:60px;
     }                   
-     input:checked + label + .round1{
+     input:checked + div .round1{
       position: relative;
       transition: 1s ;
-      top: -10px;
+      top: 5px;
+      left: 188px;
       background-color: #fff;
-      left: -203px;
     }
-    input:checked + label{
-      transition-delay: 0.1s;
+    input:checked + div {
+      transition-delay: 0.15s;
       background: #7af58d;
     }
   </style>
 </head>
 <body>
+  <label for="box">
     <input type="checkbox" name="" id="box">
-    <label for="box"></label>
-    <span class="round1"></span>
+    <div>
+      <span class="round1"></span>
+    </div></label>
+
     <!-- <span class="round2"></span> -->
-
-
 
 </body>
 </html>
