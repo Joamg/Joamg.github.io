@@ -6,26 +6,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    div {
-      width: 400px;
+    label {
+      margin: 0;
+      padding: 0;
+      width: 380px;
       height:200px;
-      border:1px solid #6af57e;
+      border: solid 4px rgb(203, 199, 202,0.5);
       border-radius:100px;
-      display:block;
-    }
-    span {
-      width: 180px;
-      height:180px;
-      box-shadow: 1px 1px 1px rgb(54, 53, 53);
+      background-color: #fff;
       display: inline-block;
-      border-radius:90px;
-
+    }
+    input {
+      position: relative;
+      left: 240px;
+      top: -100px;
+      display: none;
+    }
+    .round1 {
+      margin: 0;
+      padding: 10px;
+      width: 168px;
+      height:168px;
+      box-shadow:  0 0 4px 4px rgb(54, 53, 53,0.18);
+      display: inline-block;
+      border-radius:95px;
+      background-color: #fff;
+      position: relative;
+      top: -10px;
+      left: -383px;
+      transition: 1s;
+    }
+    .round2 {
+      width: 150px;
+      height: 110px;
+      border: 1px solid red;
+      display: inline-block;
+      position: absolute;
+      top: 55px;
+      left: 40px;
+      border-radius:60px;
+    }                   
+     input:checked + label + .round1{
+      position: relative;
+      transition: 1s ;
+      top: -10px;
+      background-color: #fff;
+      left: -203px;
+    }
+    input:checked + label{
+      transition-delay: 0.1s;
+      background: #7af58d;
     }
   </style>
 </head>
 <body>
-  <div>
-    <span></span>
-  </div>
+    <input type="checkbox" name="" id="box">
+    <label for="box"></label>
+    <span class="round1"></span>
+    <!-- <span class="round2"></span> -->
+
+
+
 </body>
 </html>
