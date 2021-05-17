@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,64 +10,59 @@
     div {
       margin: 0;
       padding: 0;
-      width: 380px;
-      height:200px;
-      border: solid 4px rgb(203, 199, 202,0.5);
-      border-radius:100px;
+      width: 372px;
+      height: 200px;
+      border: solid 4px rgb(203, 199, 202, 0.5);
+      border-radius: 120px;
       background-color: #fff;
       display: inline-block;
+      transition: 1s;
     }
+
     input {
       position: relative;
       left: 240px;
       top: -100px;
       display: none;
     }
+
     .round1 {
       margin: 0;
       padding: 10px;
-      width: 168px;
-      height:168px;
-      box-shadow:  0 0 4px 4px rgb(54, 53, 53,0.18);
+      width: 160px;
+      height: 160px;
+      box-shadow: 0 0 4px 4px rgb(54, 53, 53, 0.2);
       display: inline-block;
-      border-radius:95px;
+      border-radius: 100px;
       background-color: #fff;
       position: relative;
-      top: 5px;
-      left: 5px;
+      top: 10px;
+      left: 10px;
       transition: 1s;
     }
-    .round2 {
-      width: 150px;
-      height: 110px;
-      border: 1px solid red;
-      display: inline-block;
-      position: absolute;
-      top: 55px;
-      left: 40px;
-      border-radius:60px;
-    }                   
-     input:checked + div .round1{
+    input:checked + div .round1 {
       position: relative;
-      transition: 1s ;
-      top: 5px;
-      left: 188px;
+      transition: 1s;
+      top: 10px;
+      left: 180px;
       background-color: #fff;
     }
+
     input:checked + div {
-      transition-delay: 0.15s;
       background: #7af58d;
+      transition: 1s;
+      box-shadow: inset 0 0 0 120px #7af58d;
     }
   </style>
 </head>
+
 <body>
-  <label for="box">
+    <label for="box">
     <input type="checkbox" name="" id="box">
     <div>
       <span class="round1"></span>
-    </div></label>
-
-    <!-- <span class="round2"></span> -->
-
+    </div>
+  </label>
 </body>
+
 </html>
