@@ -5,8 +5,260 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <!-- .table
+  .table-dark
+  .table-hover
+  .table-bordered
+  .table-borderless
+  .table-striped
+  作业：实现bootstrap table样式，要求实现以上类名并让其可以组合。 -->
+  <style>
+    table {
+      padding: 30px;
+      border: solid 1px #e1e5e9;
+      border-radius: 3px;
+      text-indent: 1em;
+    }
+    .table-dark {
+      background-color: #000;
+      color: #fff;
+      box-shadow: inset 0 0 0 30px white;
+      border-radius: 3px;
+    }
+    .table-dark tr {
+      background-color:#272a2e;
+    }
+    .table-dark tr.r2 {
+      background-color:#272a2e94;
+    }
+    th {
+      width: 150px;
+      height: 40px;
+      padding: 0%;
+      text-align: left;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+    }
+    .table-borderless th, .table-borderless td {
+      border:none;
+    }
+    th:first-child {
+        width: 100px;
+    }
+    td {
+      border-top: none;
+      border-left: none;
+      border-right: none;
+    }
+    .table-bordered td, .table-bordered th {
+      border: 1px solid  #d9dee2;
+    }
+    .table-striped td, .table-striped th {
+      border: 1px solid  #d9dee2;
+    }
+    .table-striped tr.r1 , .table-striped tr.r3 {
+      background-color: #f2f2f2;
+    }
+    .r0 {
+      border-bottom: 2px black;
+    }
+    .r {
+      border-bottom: 2px #d9dee2;
+      padding-left:15px;
+    }
+    .table-dark .r0 {
+      border-bottom: 2px #f5f3f1;
+    }
+    .table-dark .r1, .table-dark .r2 {
+      border-bottom: 2px #42484b;
+    }
+    .table-hover tr:not(:first-child):hover {
+      background-color: #cacece65;
+    }
+  </style>
 </head>
+
 <body>
-  
+  <h3>table</h3>
+  <table border="1" cellspacing="0">
+      <tr class="r0">
+        <th>#</th>
+        <th>First</th>
+        <th>Last</th>
+        <th>Handle</th>
+      </tr>
+    <tr class="r1">
+      <th scope="col">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr class="r2">
+      <th>2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr class="r3">
+      <th>3</th>
+      <td>larry the Bird</td>
+      <td> </td>
+      <td>@twitter</td>
+    </tr>
+  </table>
+
+  <h3>table-dark</h3>
+  <table border="1" cellspacing="0" class="table-dark">
+      <tr class="r0">
+        <th scope="col">#</th>
+        <th>First</th>
+        <th>Last</th>
+        <th>Handle</th>
+      </tr>
+    <tr class="r1">
+      <th>1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr class="r2">
+      <th>2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr class="r3">
+      <th>3</th>
+      <td>larry the Bird</td>
+      <td> </td>
+      <td>@twitter</td>
+    </tr>
+  </table>
+
+  <h3>table-hover</h3>
+  <table border="1" cellspacing="0" class="table-hover">
+      <tr class="r0">
+        <th scope="col">#</th>
+        <th>First</th>
+        <th>Last</th>
+        <th>Handle</th>
+      </tr>
+    <tr class="r1">
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr class="r2">
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr class="r3">
+      <th scope="row">3</th>
+      <td>larry the Bird</td>
+      <td> </td>
+      <td>@twitter</td>
+    </tr>
+
+  </table> 
+  <h3>table-bordered</h3>
+  <table border="1" cellspacing="0" class="table-bordered">
+    <tr class="r0">
+      <th scope="col">#</th>
+      <th>First</th>
+      <th>Last</th>
+      <th>Handle</th>
+    </tr>
+    <tr class="r1">
+      <th>1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr class="r2">
+      <th>2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr class="r3">
+      <th>3</th>
+      <td colspan="2">larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+
+  </table> 
+  <h3>table-borderless</h3>
+  <table border="1" cellspacing="0" class="table-borderless">
+      <tr class="r0">
+        <th scope="col">#</th>
+        <th>First</th>
+        <th>Last</th>
+        <th>Handle</th>
+      </tr>
+    <tr class="r1">
+      <th>1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr class="r2">
+      <th>2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr class="r3">
+      <th>3</th>
+      <td>larry the Bird</td>
+      <td> </td>
+      <td>@twitter</td>
+    </tr>
+  </table>
+
+  <h3>table-striped</h3>
+  <table border="1" cellspacing="0" class="table-striped">
+      <tr class="r0">
+        <th scope="col">#</th>
+        <th>First</th>
+        <th>Last</th>
+        <th>Handle</th>
+      </tr>
+    <tr class="r1">
+      <th>1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr class="r2">
+      <th colspan="2">Header</th>
+      <th colspan="1">Header</th>
+      <th colspan="1">Header</th>
+        <tr>
+          <th colspan="2">A</th>
+          <td>First</td>
+          <td>Last</td>
+        </tr>
+        <tr>
+          <th colspan="2">B</th>
+          <td>First</td>
+          <td>Last</td>
+        </tr>
+        <tr>
+          <th colspan="2">C</th>
+          <td>First</td>
+          <td>Last</td>
+        </tr>
+    </tr>
+    <tr class="r3">
+      <th>3</th>
+      <td>larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </table> 
 </body>
 </html>
