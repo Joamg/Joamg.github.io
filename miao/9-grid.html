@@ -11,14 +11,25 @@
       height: 200px;
       border-collapse: collapse;
     }
+    th {
+      position: relative;
+    }
     tr, th {
       border: solid 5px green;
-      color: blue;
     }
     th:hover {
-      border: solid 5px tan;
+      border: solid 5px red;
     }
-
+    th:hover::before {
+      border: solid 5px red;
+      content: '';
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      right: -5px;
+      bottom: -5px;
+      pointer-events: none;
+    }
   </style>
 </head>
 <body>
