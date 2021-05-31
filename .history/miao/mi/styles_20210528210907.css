@@ -1,0 +1,202 @@
+* {
+    box-shadow: inset 0 0 1px red;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    margin: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+}
+
+[class*="container-a-left"] {
+    position: relative;
+}
+
+[class*="container-a-right"] {
+    position: relative;
+    right: -100px;
+}
+
+.container-a {
+    line-height: 40px;
+    color: #a7a7a7;
+    font-size: 10px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.side:hover {
+    color: white;
+}
+
+.site-header {
+    height: 90px;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    margin: 0px;
+    padding: 0;
+}
+
+.site-header-a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    line-height: 90px;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.milogo {
+    position: absolute;
+    left: 20px;
+    top: 55px;
+}
+
+.xmilogo::before {
+    background: http: //s02.mifile.cn/assets/static/image/logo-mi2.png;
+}
+
+.datu {
+    display: block;
+    width: 1226px;
+    margin: 0 20px 10px 20px;
+    height: 460px;
+    background-color: rgb(175, 248, 203);
+}
+
+.header {
+    height: 420px;
+    margin: 0 0 0 20px;
+    padding: 20px 0;
+    background-color: rgba(105, 101, 101, 0.6);
+    position: absolute;
+    top: 130px;
+}
+
+.sidebar {
+    width: 200px;
+    line-height: 42px;
+    padding-left: 30px;
+    color: white;
+    position: relative;
+    display: block;
+    text-decoration: none;
+}
+
+.sidebar:hover>li {
+    display: block;
+}
+
+.sidebar:hover {
+    background-color: #fd6821;
+}
+
+.test:hover {
+    background-color: #fff;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;
+}
+
+ul {
+    position: relative;
+    right: -280px;
+    top: -10px;
+}
+
+.sidebar:hover+ul {
+    display: block;
+    position: relative;
+    right: -280px;
+}
+
+li {
+    width: 150px;
+    line-height: 40px;
+    text-align: center;
+}
+
+li:nth-child(n + 7) {
+    margin-left: 250px;
+}
+
+li:nth-child(n + 13) {
+    margin-left: 500px;
+}
+
+li:nth-child(n+19) {
+    margin-left: 750px;
+}
+
+li:nth-child(6) {
+    margin-bottom: -240px;
+}
+
+li:nth-child(12) {
+    margin-bottom: -240px;
+}
+
+li:nth-child(18) {
+    margin-bottom: -240px;
+}
+
+.secbottom {
+    margin: 15px 20px 0px 20px;
+    display: flex;
+}
+
+.betbm {
+    width: 316px;
+    height: 170px;
+    margin: 0 15px 15px 0px;
+    flex-grow: 10;
+    flex-wrap: wrap;
+}
+
+[b1] {
+    height: 170px;
+    width: 234px;
+    margin: 0px 15px 15px 0px;
+    background-color: rgb(84, 77, 70);
+}
+
+.smallbottom {
+    display: block;
+    width: 76px;
+    height: 82px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: rgb(190, 188, 188);
+}
+
+.smallbottom:nth-child(n + 3) {
+    margin-left: 76px;
+}
+
+.smallbottom:nth-child(n + 5) {
+    margin-left: 152px;
+}
+
+.smallbottom:nth-child(1) {
+    margin-top: 4px;
+}
+
+.smallbottom:nth-child(2) {
+    margin-bottom: -164px;
+}
+
+.smallbottom:nth-child(4) {
+    margin-bottom: -164px;
+}

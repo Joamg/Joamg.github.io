@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>face-round</title>
+  <style>
+
+    .fff {
+      zoom: 1;
+    }
+   @keyframes spin {
+    to { 
+      transform: rotate(1turn); 
+    }
+}
+@keyframes spin-reverse {
+    from { 
+      transform: rotate(1turn); 
+    }
+}
+.avatar {
+    animation: spin 3s infinite linear;
+    transform-origin: 50% 150px; /* 150px = path radius */
+}
+.avatar > div{
+    animation: spin-reverse 3s infinite linear;
+}
+.path {
+  width: 300px; 
+  height: 300px;
+  padding: 20px;
+  border-radius: 50%;
+  xbackground: #fb3;
+  margin: 50px auto;
+}
+.avatar {
+  width: 50px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  
+   .ff {
+    display: block;
+    width: inherit;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="path" >
+    <div class="avatar">
+      <div class="ff" style="font-size:50px">aile&#128514;</div>
+    </div>
+  </div>
+ 
+</body>
+</html>

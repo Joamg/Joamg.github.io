@@ -1,0 +1,182 @@
+* {
+    box-shadow: inset 0 0 1px red;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    margin: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+}
+
+[class*="container-a-left"] {
+    position: relative;
+}
+
+[class*="container-a-right"] {
+    position: relative;
+    right: -100px;
+}
+
+.container-a {
+    line-height: 40px;
+    color: #a7a7a7;
+    font-size: 10px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.side:hover {
+    color: white;
+}
+
+.site-header {
+    height: 90px;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    margin: 0px;
+    padding: 0;
+}
+
+.site-header-a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    line-height: 90px;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.milogo {
+    position: absolute;
+    left: 20px;
+    top: 55px;
+    display: inline-block;
+    height: 100px;
+}
+
+.milogo::before {
+    background: http: //s02.mifile.cn/assets/static/image/logo-mi2.png;
+}
+
+.header {
+    height: 460px;
+    margin: 0 14px;
+    background-color: #a19f9f;
+}
+
+.sidebar {
+    width: 230px;
+    line-height: 40px;
+    padding-left: 30px;
+    color: white;
+    position: relative;
+    top: 30px;
+    display: block;
+    text-decoration: none;
+}
+
+.imgs {
+    width: calc(100% - 270px);
+    height: 465px;
+    background-color: red;
+    margin-left: 230px;
+    margin-top: -455px;
+    position: relative;
+    left: 40px;
+}
+
+.sidebar:hover>li {
+    display: block;
+}
+
+.sidebar:hover {
+    background-color: #fd6821;
+}
+
+.test:hover {
+    background-color: #fff;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;
+}
+
+ul {
+    position: relative;
+    right: -280px;
+    top: -10px;
+}
+
+.sidebar:hover+ul {
+    display: block;
+    position: relative;
+    right: -280px;
+    top: -
+}
+
+li {
+    width: 150px;
+    line-height: 40px;
+    text-align: center;
+}
+
+li:nth-child(n+7) {
+    margin-left: 250px;
+}
+
+li:nth-child(n+13) {
+    margin-left: 500px;
+}
+
+li:nth-child(n+19) {
+    margin-left: 750px;
+}
+
+li:nth-child(6) {
+    margin-bottom: -240px;
+}
+
+li:nth-child(12) {
+    margin-bottom: -240px;
+}
+
+li:nth-child(18) {
+    margin-bottom: -240px;
+}
+
+.secbottom {
+    margin: 0 14px 0px 14px;
+    display: flex;
+}
+
+.betbm {
+    xwidth: 180px;
+    height: 170px;
+    margin: 14px 14px 14px 0;
+    flex-grow: 10;
+    flex-wrap: wrap;
+}
+
+[b1] {
+    height: 170px;
+    width: 260px;
+    margin: 14px 14px 14px 0px;
+    background-color: rgb(84, 77, 70, 0.5);
+    display: flex;
+}
+
+.smallbottom {
+    width: 80px;
+    height: 80px;
+    flex-wrap: wrap;
+}

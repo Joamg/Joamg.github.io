@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+  * {
+    height: 100%;
+  }
+  body {
+    box-shadow: inset  0 0 3px red;
+  }
+  section {
+    xheight: 100%;
+    display: flex;
+    xwidth: 100px;
+    xflex-wrap: wrap;
+  }
+  div {
+    display: flex;
+    box-shadow: inset  0 0 3px red;
+  }
+  [a], [c], [d]{
+    flex-grow: 1;
+  }
+  </style>
+</head>
+<body>
+  <section>
+    <div a>111</div>
+    <div b>222</div>
+    <div c>333</div>
+    <div d>444</div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-shadow: inset 0 0 1px red;
+    }
+
+    body {
+      margin: 0;
+      xpadding: 0;
+    }
+
+    .container {
+      width: 100%;
+      height: 35px;
+      background-color: #333;
+      margin: 0;
+    }
+
+    [class*="container-a-left"] {
+      position: relative;
+    }
+
+    [class*="container-a-right"] {
+      position: relative;
+      right: -100px;
+    }
+
+    .container-a {
+      line-height: 35px;
+      color: #a7a7a7;
+      font-size: 10px;
+      text-decoration: none;
+      xmargin: 10px;
+      padding: 0;
+    }
+
+    .side:hover {
+      color: white;
+    }
+
+    .site-header {
+      height: 90px;
+      width: 100%;
+      background-color: #fff;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .site-header-a {
+      text-decoration: none;
+      font-size: 18px;
+      color: black;
+      line-height: 90px;
+      display: inline-block;
+    }
+
+    .site-header-a-logo {
+      position: absolute;
+      left: 20px;
+    }
+    .header {
+      width: 100%;
+      height: 460px;
+      background-color: #a19f9f;
+    }
+
+    .sidebar {
+      width: 230px;
+      line-height: 40px;
+      padding-left: 30px;
+      color: white;
+      position: relative;
+      top: 30px;
+      display: block;
+      text-decoration: none;
+    }
+
+    .imgs {
+      width: calc(100% - 270px);
+      height: 465px;
+      background-color: red;
+      margin-left: 230px;
+      margin-top: -455px;
+      position: relative;
+      left: 40px;
+    }
+
+    .sidebar:hover {
+      background-color: #fd6821;
+    }
+
+    .test:hover {
+      background-color: #fff;
+    }
+
+    ul {
+      list-style: none;
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="container">
+    <a class="container-a" href="">小米商城</a>
+    <a class="container-a" href="">MIUI</a>
+    <a class="container-a" href="">loT</a>
+    <a class="container-a" href="">云服务</a>
+    <a class="container-a" href="">天星数科</a>
+    <a class="container-a" href="">有品</a>
+    <a class="container-a" href="">小爱开放平台</a>
+    <a class="container-a" href="">企业团购</a>
+    <a class="container-a" href="">资质证照</a>
+    <a class="container-a" href="">协议规则</a>
+    <a class="container-a" href="">下载app</a>
+    <a class="container-a" href="">智能生活</a>
+    <a class="container-a" href="">Select Location</a>
+    <a class="container-a" href="">登录</a>
+    <a class="container-a" href="">注册</a>
+    <a class="container-a" href="">消息通知</a>
+    <a class="container-a" href="">购物车</a>
+  </section>
+
+  <div class="site-header">
+    <a class="site-header-a-logo" href="">logo</a>
+    <a class="site-header-a" href="">小米手机</a>
+    <a class="site-header-a" href="">Redmi 红米</a>
+    <a class="site-header-a" href="">电视</a>
+    <a class="site-header-a" href="">笔记本</a>
+    <a class="site-header-a" href="">家电</a>
+    <a class="site-header-a" href="">路由器</a>
+    <a class="site-header-a" href="">智能硬件</a>
+    <a class="site-header-a" href="">服务</a>
+    <a class="site-header-a" href="">社区</a>
+  </div>
+
+
+  <div class="header">
+    <a class="sidebar" href="">手机 电话卡</a>
+    <a class="sidebar" href="">电视 盒子</a>
+    <a class="sidebar" href="">笔记本 显示器</a>
+    <a class="sidebar" href="">家电 插线板</a>
+    <a class="sidebar" href="">出行 穿戴</a>
+    <a class="sidebar" href="">智能 路由器</a>
+    <a class="sidebar" href="">电源 配件</a>
+    <a class="sidebar" href="">健康 儿童</a>
+    <a class="sidebar" href="">耳机 音箱</a>
+    <a class="sidebar" href="">生活 箱包</a>
+    <a  class="imgs"></a>
+  </div>
+</body>
+
+</html>

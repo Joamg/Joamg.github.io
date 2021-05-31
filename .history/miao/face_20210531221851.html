@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>face-round</title>
+  <style>
+* {
+    box-shadow: inset 0 0 1px red;
+}
+    .fff {
+      zoom: 1;
+    }
+   @keyframes spin {
+    to { 
+      transform: rotate(1turn); 
+    }
+}
+@keyframes spin-reverse {
+    from { 
+      transform: rotate(1turn); 
+    }
+}
+.avatar {
+    animation: spin 2s infinite linear;
+    transform-origin: 50% 150px; /* 150px = path radius */
+}
+.avatar > div{
+    animation: spin-reverse 2s infinite linear;
+}
+.path {
+  width: 300px; 
+  height: 300px;
+  padding: 20px;
+  border-radius: 50%;
+  margin: 50px auto;
+}
+.avatar {
+  width: 50px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  
+   .ff {
+    display: block;
+    width: inherit;
+  }
+}
+.container {
+  width: 300px;
+  height: 300px;
+  xborder: 1px dotted red;
+  border-radius: 50%;
+  position: relative;
+}
+.circle {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  transform-origin: 0 150px;
+  animation: spin 6s infinite linear
+}
+.content {
+  line-height: 30px;
+  animation: inherit;
+  animation-direction: reverse;
+}
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="path" >
+    <div class="avatar">
+      <div class="ff" style="font-size:50px">&#128514;</div>
+    </div>
+  </div>
+ 
+  <section>
+    <div class="container">
+      <div class="circle">
+        <div class="content" style="font-size:30px">&#128514;</div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

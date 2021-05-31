@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+
+    }
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      height: 100%;
+    }
+    div {
+      box-shadow: inset 0 0 1px red;
+    }
+    div[a] {
+      width: 100%;
+      height: 50px;
+    }
+    div[b] {
+      width: 150px;
+      height: calc(100% - 50px);
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <div a>111</div>
+    <div b>222</div>
+    <div c>333</div>
+  </section>
+</body>
+</html>
