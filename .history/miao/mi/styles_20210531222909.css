@@ -13,10 +13,9 @@ li {
 }
 
 .sec-conter {
-    height: 90px;
-    margin: 0 20px;
+    height: 100px;
 }
-.sec-conter > ul > li {
+.sec-conter ul li {
     display: inline-block;
 }
 .container {
@@ -106,7 +105,7 @@ a {
 .milogo {
     position: absolute;
     left: 20px;
-    top: 62px;
+    top: 62.5px;
 }
 
 .xmilogo::before {
@@ -131,40 +130,22 @@ a {
     height: 460px;
     margin: 0 20px;
     background-color: rgb(175, 248, 203);
-    z-index: 1;
 }
-/* 侧边栏区域以下---------------------------- */
+/* 侧边栏区域以下 */
 .side-menu {
-    background-color: rgba(105,101,101,.6);
+    background-color: rgb(171, 255, 163,.5);
     position: relative;
-    display: block;
-    padding: 20px 0;
-    left: 20px;
-    top: 25px;
-    z-index: 2;
-    height: 420px;
-  overflow: hidden;
-  width: 234px;
 }
 .side-menu ul,
 .side-menu ul li {
-    padding: 0;
-    margin: 0 ;
+    xpadding: 0;
+    margin: 0 20px;
     list-style: 0;
 }
-.menu-list {
-    display: none;
-}
-li.side-item {
+ul.side-list {
     display: block;
-}
-.item-a {
-    height: 42px;
-    line-height: 42px;
-    width: 200px;
-    display: block;
-    padding-left: 34px;
-    color: white;
+
+
 }
 
 
@@ -190,7 +171,7 @@ li.side-item {
 
 [b1] {
     height: 170px;
-    width: 234px;
+    width: 230px;
     margin: 0px 15px 15px 0px;
     background-color: rgb(84, 77, 70);
 }
