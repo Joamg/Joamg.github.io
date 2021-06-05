@@ -1,0 +1,280 @@
+* {
+    box-shadow: inset 0 0 2px red;
+}
+
+body {
+    background-color: #f3f3f3;
+    margin: 0;
+}
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sec-conter {
+    height: 90px;
+    margin: 0 20px;
+}
+.sec-conter > ul > li {
+    display: inline-block;
+}
+.container {
+    margin: 0;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(24, 24, 24);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+[class*="container-a-left"] {
+    position: relative;
+}
+
+[class*="container-a-right"] {
+    position: relative;
+    right: -100px;
+}
+
+.container-a {
+    line-height: 40px;
+    color: #a7a7a7;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.side:hover {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.li-blank {
+    width: 240px;
+    display: block;
+    background-color: #000;
+}
+.bar-con ul,
+.bar-con li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.bar-con li a {
+    position: relative;
+    top: -20px;
+    display: block;
+    margin: 0;
+    width: auto;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 10px;
+}
+.bar-con {
+    border-width: 1px 0 0 0;
+    xborder-style: solid;
+    xborder-color: rgb(187, 187, 187);
+    position: absolute;
+    left: 0px;
+    top: 160px;
+    width: 100%;
+    background-color: white;
+}
+.site-header-a:hover {
+    color: #fd6821;
+}
+.child-item {
+    display: none;
+}
+.site-header-a:hover + div {
+    xposition: absolute;
+}
+.site-header-a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    padding: 20px 0;
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.milogo {
+    position: absolute;
+    left: 20px;
+    top: 60px;
+}
+
+.xmilogo::before {
+    background: http: //s02.mifile.cn/assets/static/image/logo-mi2.png;
+}
+
+.datu {
+    position: relative;
+    top: 0;
+    display: block;
+    width: 1226px;
+    height: 460px;
+    margin: 0 0px;
+    background-color: rgb(175, 248, 203);
+    z-index: 1;
+}
+/* 侧边栏区域以下---------------------------- */
+.side-menu {
+    background-color: rgba(105,101,101,.6);
+    position: absolute;
+    display: block;
+    padding: 20px 0;
+    top: 0px;
+    z-index: 2;
+    height: 420px;
+    width: 234px;
+}
+.side-menu ul,
+.side-menu ul li {
+    padding: 0;
+    margin: 0 ;
+    list-style: 0;
+}
+.menu-list {
+    display: none;
+}
+li.side-item {
+    display: block;
+}
+.item-a {
+    height: 42px;
+    line-height: 42px;
+    width: 200px;
+    display: block;
+    padding-left: 34px;
+    color: white;
+}
+.item-a:hover {
+    background-color: #ff6700;
+}
+.child-item {
+    position: relative;
+    top: 100%;
+    right: 0;
+    background-color:lightgreen;
+}
+.item-a:hover ~ div ul{
+    display: block;
+    position: relative;
+}
+/* 侧边栏区域以上---------------------------- */
+
+
+
+
+
+
+
+.secbottom {
+    margin: 15px 20px 0px 0px;
+    display: flex;
+}
+
+.betbm {
+    width: 316px;
+    height: 170px;
+    margin: 0 15px 15px 0px;
+    flex-grow: 10;
+    flex-wrap: wrap;
+}
+
+[b1] {
+    height: 170px;
+    width: 234px;
+    margin: 0px 15px 15px 0px;
+    background-color: rgb(84, 77, 70);
+}
+
+.smallbottom {
+    display: block;
+    width: 76px;
+    height: 82px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: rgb(190, 188, 188);
+    font-size: 12px;
+}
+
+.smallbottom:nth-child(n + 3) {
+    margin-left: 76px;
+}
+
+.smallbottom:nth-child(n + 5) {
+    margin-left: 152px;
+}
+
+.smallbottom:nth-child(1) {
+    margin-top: 4px;
+}
+
+.smallbottom:nth-child(2) {
+    margin-bottom: -164px;
+}
+
+.smallbottom:nth-child(4) {
+    margin-bottom: -164px;
+}
+
+
+/* 小米秒杀以下 */
+h2 {
+    margin: 0 20px;
+    font-weight: normal;
+    font-size: 22px;
+    color: #333;
+    line-height: 58px;
+}
+
+.cont-child {
+    height: 300px;
+    width: 233px;
+    background-color: #fff;
+}
+li.li.cont-child {
+    display: block;
+}
+li.cont-child img {
+    margin-top: 20px;
+    padding: 0 36.5px;
+}
+.cont-child:nth-child(1) {
+    margin-left: 20px;
+}
+.cont-child:nth-child(n + 2) {
+    margin-left: 15px;
+}
+.main-title {
+    flex-wrap: wrap;
+    display: flex;
+
+}
+.large-title {
+    margin: 20px 20px;
+    height: 120px;
+    display: block;
+}
+p {
+    margin: 0;
+    padding: 0 36.5px;
+
+}
+/* 小米秒杀以上 */
+
+/* 手机以下 */
+.mobile {
+    display: block;
+}
+.mobile-a {
+    width: 234px;
+    height: 300px;
+}
