@@ -1,0 +1,330 @@
+* {
+    xbox-shadow: inset 0 0 2px red;
+}
+
+body {
+    background-color: #f3f3f3;
+    margin: 0;
+}
+.container {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(24, 24, 24);
+}
+a {
+    text-decoration: none;
+}
+span:hover {
+    color: #ff6700;
+}
+.sep {
+    margin: 0 0.3em;
+    color: rgba(253, 253, 253, 0.144);
+}
+.nav-list {
+    margin: auto;
+    width: 1226px;
+    list-style: none;
+    }
+    .nav-right {
+        float: right;
+    }
+.nav-item li {
+    display: inline-block;
+}
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.con-a {
+    line-height: 40px;
+    color: #a7a7a7;
+    font-size: 10px;
+    &:hover {
+        color: #fff;
+    }
+}
+.sec-conter {
+    height: 100px;
+    display: block;
+}
+
+.side:hover {
+    color: white;
+}
+.nav-sec {
+    height: 100px;
+}
+.li-blank {
+    width: 240px;
+    display: block;
+    background-color: #000;
+}
+.bar-con ul,
+.bar-con li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.bar-con li a {
+    position: relative;
+    top: -20px;
+    display: block;
+    margin: 0;
+    width: auto;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 10px;
+}
+.bar-con {
+    border-width: 1px 0 0 0;
+    position: absolute;
+    left: 0px;
+    top: 160px;
+    width: 100%;
+    background-color: white;
+}
+.site-header-a:hover {
+    color: #fd6821;
+}
+.child-item {
+    display: none;
+}
+.site-header-a:hover + div {
+    xposition: absolute;
+}
+.site-header-a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    padding: 20px 0;
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 16px;
+}
+.nav-sec {
+    width: 1226px;
+    margin: auto;
+
+}
+.milogo {
+    position: relative;
+    top: 22px;
+}
+.blank {
+    width: 180px;
+}
+.nav-sec-list li {
+    display: inline-block;
+    a {
+        color:#000;
+        padding-right: 20px;
+    }
+}
+
+
+.datu {
+    display: block;
+    width: 1226px;
+    height: 460px;
+    margin: auto;
+    background-color: rgb(175, 248, 203);
+    z-index: 1;
+}
+
+
+/* 侧边栏区域以下---- */
+
+.side-menu  {
+    position: absolute;
+    .side-list {
+        background-color: rgba(105,101,101,.5);
+        position: absolute;
+        padding: 20px 0 ;
+        top: -465px;
+        z-index: 5;
+        height: 420px;
+        width: 234px;
+        .side-item {
+            display: block;
+            cursor:pointer;
+            &:hover {
+            background-color: #ff6700;
+            }
+            .item-a {
+                line-height: 42px;
+                width: 200px;
+                padding-left: 34px;
+                color: white;
+            }
+            .small-menu {  
+                position: absolute;
+                left: 100%;
+                top: 0;
+                width: 991px;
+                height: 461px;
+                z-index: 10;
+                .menu-list {
+                    z-index: 8;
+                    .menu-item {
+                        line-height: 40px;
+                        width:255px;
+                        padding:21px 0 13.5px 20px;
+                        white-space:nowrap;
+                        overflow:hidden;
+                        background-color: #fff;
+                        a {
+                            text-align: center;
+                            vertical-align:middle;
+                            line-height: 40px;
+                            font-size: 14px;
+                            color: #000;
+                            img {
+                            vertical-align:middle;
+                            padding-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+li.side-item:hover div {
+    display: block;
+}
+.small-menu {
+    display: none;
+}
+.menu-item:nth-child(n + 7) {
+    margin-left :240px; 
+}
+.menu-item:nth-child(n + 13) {
+    margin-left :480px; 
+}
+.menu-item:nth-child(n + 19) {
+    margin-left :720px;
+}
+.menu-item:nth-child(6),
+.menu-item:nth-child(12),
+.menu-item:nth-child(18){
+    margin-bottom :-462.5px; 
+}
+/* 侧边栏区域以上 */
+
+
+
+.secbottom {
+    margin: auto;
+    xdisplay: flex;
+    .bott1 {
+        display: inline-block;
+        height: 170px;
+        width: 234px;
+        margin: 0px 15px 15px 0px;
+        background-color: rgb(84, 77, 70);
+    }
+    .bottom-img {
+        float: right;
+    }
+}
+
+.betbm {
+    width: 316px;
+    height: 170px;
+    margin: 0 15px 15px 0px;
+    flex-grow: 10;
+    flex-wrap: wrap;
+}
+
+
+
+.smallbottom {
+    display: block;
+    width: 76px;
+    height: 82px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: rgb(190, 188, 188);
+    font-size: 12px;
+}
+
+.smallbottom:nth-child(n + 3) {
+    margin-left: 76px;
+}
+
+.smallbottom:nth-child(n + 5) {
+    margin-left: 152px;
+}
+
+.smallbottom:nth-child(1) {
+    margin-top: 4px;
+}
+
+.smallbottom:nth-child(2) {
+    margin-bottom: -164px;
+}
+
+.smallbottom:nth-child(4) {
+    margin-bottom: -164px;
+}
+
+
+/* 小米秒杀以下 */
+h2 {
+    margin: 0 20px;
+    font-weight: normal;
+    font-size: 22px;
+    color: #333;
+    line-height: 58px;
+}
+
+.cont-child {
+    height: 300px;
+    width: 233px;
+    background-color: #fff;
+}
+li.li.cont-child {
+    display: block;
+}
+li.cont-child img {
+    margin-top: 20px;
+    padding: 0 36.5px;
+}
+.cont-child:nth-child(1) {
+    margin-left: 20px;
+}
+.cont-child:nth-child(n + 2) {
+    margin-left: 15px;
+}
+.seconds-kill {
+    margin: auto;
+}
+.main-title {
+    flex-wrap: wrap;
+    display: flex;
+
+}
+.large-title {
+    margin: 20px 20px;
+    height: 120px;
+    display: block;
+}
+p {
+    margin: 0;
+    padding: 0 36.5px;
+
+}
+/* 小米秒杀以上 */
+
+/* 手机以下 */
+.mobile {
+    display: block;
+}
+.mobile-a {
+    width: 234px;
+    height: 300px;
+}
