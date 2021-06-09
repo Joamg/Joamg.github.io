@@ -185,11 +185,9 @@ console.log(x)
 <script id="ch0104/02" type="#">
   var n = Number(prompt('请输入n'))
   if (n < 0) {
-    var x = -n
-    console.log(x)
-  } else 
-  console.log(n)
-
+    n = -n
+  } 
+console.log(n)
 </script>
 <script id="ch0104/03" type="#">
   var n = Number(prompt('请输入n'))
@@ -366,53 +364,21 @@ console.log('YES')
   else 
     console.log('N')
 </script>
-<script id="ch0104/18" type="#">
+<script id="ch0104/18" >
   var x = Number(prompt('请输入x'))
   var y = Number(prompt('请输入y'))
-  if (x >= -1 && x <= 1 && y >= -1 && y <= 1) {
-    console.log ('yes')
-  }else 
-  console.log ('no')
-</script>
-<script id="ch0104/19" type="#"> //不会
-  var x = Number(prompt('请输入x'))
-  var y = Number(prompt('请输入y'))
-  var z = prompt
-</script>
-<script id="ch0104/20" > 
-  var a = Number(prompt('请输入a'))
-  var b = Number(prompt('请输入b'))
-  var c = Number(prompt('请输入c'))
-  var y = b * b - 4 * a * c
-  var z = sqrt(y)
-  if (y > 0) {
-  var f1=(-b - z)/(2 * a).toFixed(5)
-  var f2=(-b + z)/(2 * a).toFixed(5)
-  var all1 = (String(x1) + '=' +String(f1))
-  var all2 = (String(x2) + '=' +String(f2))
-  console.log('all1')
-  console.log('all2')
-  }else if (y == 0) {
-  var z = sqrt(y)
-  var x1=x2=(-b - z)/(2 * a).toFixed(5)
-  } eles {
-    var z = sqrt(y)
-    var p = z/(2*a)
-    var x1 = (-b/2*a).toFixed(5)
-    var x2 = (-b/2*a).toFixed(5)
+  if (x <= 0 || y <= 0) {
+    if (x % 3200 == 0 ) {
+      console.log('N')
+    }  else
+      console.log('Y')
   }
+  else 
+    console.log('N')
 </script>
-<script id="ch0104/21" type="#">
-var n = Number(prompt('请输入h'))
 var x = Number(prompt('请输入x'))
-var y = Number(prompt('请输入y'))
-var s = Math.ceil(y / x)
-var d = n - s 
-console.log(d)
-</script>
-
-
-
+var x=-x
+console.log('x')
 
 
 
