@@ -20,7 +20,7 @@ var a = Number(prompt('请输入a'))
 var b = Number(prompt('请输入b'))
 var c = Number(prompt('请输入c'))
 
-var x = parseInt((a + b) / c)
+var x=(a + b) / c
 console.log(x)
 </script>
 
@@ -58,7 +58,7 @@ console.log(x)
   var d = Number(prompt('请输入d'))
 
   var y = (a * x * x * x + b * x * x + c * x + d ).toFixed(7)
-  console.log(y)
+  console.log(y).toFixed(7)
 </script>
 <script id="ch0103/08" type="#">
   var f = Number(prompt('请输入f'))
@@ -69,8 +69,8 @@ console.log(x)
 <script id="ch0103/09" type="#">
   var r = Number(prompt('请输入r'))
   var d = (2 * r).toFixed(4)
-  var l = (3.14159 *2 * r).toFixed(4)
-  var s = (3.14159 * r * r).toFixed(4)
+  var l = (3.1415926 *2 * r).toFixed(4)
+  var s = (3.1415926 * r * r).toFixed(4)
 
   console.log(d)
   console.log(l)
@@ -103,8 +103,8 @@ console.log(x)
   var b = parseInt(a / 100) //a百位
   var c = parseInt(a / 10)
   var d = Math.round(a % 10) //a个位
-  var e = parseInt(c % 10) //a十位
-  var all = (String(d)+String(e)+String(b))
+  var e = parseInt(c % 10) //a十位
+  var all=[d,e,b].join(' ');
 
   console.log(all)
 </script>

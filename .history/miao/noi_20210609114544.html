@@ -69,8 +69,8 @@ console.log(x)
 <script id="ch0103/09" type="#">
   var r = Number(prompt('请输入r'))
   var d = (2 * r).toFixed(4)
-  var l = (3.14159 *2 * r).toFixed(4)
-  var s = (3.14159 * r * r).toFixed(4)
+  var l = (3.1415926 *2 * r).toFixed(4)
+  var s = (3.1415926 * r * r).toFixed(4)
 
   console.log(d)
   console.log(l)
@@ -104,7 +104,7 @@ console.log(x)
   var c = parseInt(a / 10)
   var d = Math.round(a % 10) //a个位
   var e = parseInt(c % 10) //a十位
-  var all = (String(d)+String(e)+String(b))
+  var all=[d,e,b].join(' ');
 
   console.log(all)
 </script>
