@@ -444,88 +444,75 @@ console.log(d)
   console.log(j)
   </script>
 <script id="ch0105/02" type="#">
-  var n = 0
-  var month = 0 
-  var moneyall = 0
-  while (month < 12) {
-    var money = Number(prompt('请输入money'))
-    month = month+1
-    moneyall = moneyall + money
-  }
-  var j=(moneyall / 12).toFixed(2)
-  console.log('$'+j)
+
     </script>
 <script id="ch0105/03" type="#">
   var n = Number(prompt('请输入n'))
-  var age = 0
-  var ageall = 0 
-
-  var count = 0
-  while (count < n) {
-    age=Number(prompt('请输入'))
-    count=count+1
-    ageall=ageall+age
-  }
-  var j=(ageall / n).toFixed(4)
-  console.log(j)
+  var a = Number(prompt('请输入a'))
+  var b = Number(prompt('请输入b'))
+  var x = ((a + b) / n).toFixed(2)
+  console.log(x)
   </script>
 <script id="ch0105/04" type="#">
-  var n = Number(prompt('请输入'))
-  var number = 0
-  var numberall = 0
+  var n = Number(prompt('请输入n'))
+  var a = Number(prompt('请输入a'))
+  var b = Number(prompt('请输入b'))
+  var c = Number(prompt('请输入c'))
+  var d = Number(prompt('请输入d'))
+  var s = a + b + c + d
+  var x = ((a + b + c + d) / n).toFixed(5)
 
-  var count = 0
-  while (count < n) {
-    number = Number(prompt('请输入'))
-    count = count + 1
-    numberall = numberall + number
-  }
-  var j=(numberall / n).toFixed(5)
-  console.log(numberall, j)
+  console.log(s)
+  console.log(x)
 </script>
 <script id="ch0105/05" type="#">
   var n = Number(prompt('请输入n'))
-  var num
-  var min = Infinity
-  var max = -Infinity
-  var count = 0
-  while (count < n) {
-    num = Number(prompt('分数'))
-    if (max < num) {
-      max = num
-    } if (min > num)  {
-      min = num
-    }
-    count = count + 1 
-  }
-  console.log(max-min)
+  var a = Number(prompt('请输入a'))
+  var b = Number(prompt('请输入b'))
+  var c = Number(prompt('请输入c'))
+  var d = Number(prompt('请输入d'))
+  var e = Number(prompt('请输入e'))
+  var m = Math.max( a, b , c , d , e)
+
+  console.log(m)
 </script>
 <script id="ch0105/06" type="#">
   var n = Number(prompt('请输入n'))
-  var score
-  var max = -Infinity
-  var count = 0
-  while (count < n) {
-    score = Number(prompt('分数'))
-    if (max < score){
-      max = score
-    }
-    count = count + 1 
-  }
-  console.log(max)
+  var a = Number(prompt('请输入a'))
+  var b = Number(prompt('请输入b'))
+  var c = Number(prompt('请输入c'))
+  var d = Number(prompt('请输入d'))
+  var e = Number(prompt('请输入e'))
+  var f = Number(prompt('请输入f'))
+  var m = Math.max( a, b , c , d , e, f)
+  var n = Math.min( a, b , c , d , e, f)
+  console.log(m-n)
 </script>
 <script id="ch0105/07" type="#">
-  var n = Number(prompt())
-
+  var n = Number(prompt('请输入n'))
+  var a1 = Number(prompt('请输入a1'))
+  var b1 = Number(prompt('请输入b1'))
+  var c1 = Number(prompt('请输入c1'))
+  var a2 = Number(prompt('请输入a2'))
+  var b2 = Number(prompt('请输入b2'))
+  var c2 = Number(prompt('请输入c2'))
+  var a3 = Number(prompt('请输入a3'))
+  var b3 = Number(prompt('请输入b3'))
+  var c3 = Number(prompt('请输入c3'))
+  var m = Math.max( a1+ b1 +c1)
+  var n = Math.max( a2+ b2 +c2)
+  var o = Math.max( a3+ b3 +c3)
+  var p = a1+ b1 + c1 + a2 + b2 + c2 + a3+ b3 +c3
+  console.log(m, n, o ,p )
 </script>
-<script id="ch0105/08" type="#">
+<script id="ch0105/07" type="#">
   var n = Number(prompt('请输入n'))
   var a = Number(prompt('请输入a'))
   var b = Number(prompt('请输入b'))
 
   console.log(180 * (n-2) - a - b)
 </script>
-<script id="ch0105/09" type="#">
+<script id="ch0105/08" type="#">
   var m = Number(prompt('请输入m'))
   var n = Number(prompt('请输入n'))
   if (m % 2 == 0 && m < n) {
@@ -535,3 +522,10 @@ console.log(d)
   }
   console.log(180 * (n-2) - a - b)
 </script>
+var n=2
+var m=2
+while (n<=100) {
+  m=m+n
+  n=n+1
+}
+console.log(m)
