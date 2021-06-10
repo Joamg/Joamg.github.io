@@ -1,4 +1,4 @@
-<script id="ch0103/01" type="#">
+<script id="ch0103/01"  type="#">
   var a = Number(prompt('请输入a'))
   var b = Number(prompt('请输入b'))
 
@@ -24,7 +24,7 @@ var x = parseInt((a + b) / c)
 console.log(x)
 </script>
 
-<script id="ch0103/04" type="#">
+<script id="ch0103/04" type="#" >
   var a = Number(prompt('请输入a'))
   var b = Number(prompt('请输入b'))
   
@@ -34,7 +34,7 @@ console.log(x)
   console.log(y)
 </script>
 
-<script id="ch0103/05" type="#">
+<script id="ch0103/05" type="#" >
   var a = Number(prompt('请输入a'))
   var b = Number(prompt('请输入b'))
   
@@ -375,41 +375,31 @@ console.log('YES')
   console.log ('no')
 </script>
 <script id="ch0104/19" type="#"> //不会
-  var a = Number(prompt('请输入a'))
-  var b = Number(prompt('请输入b'))
-  var operator = prompt()
-  if ( operator == '+') {
-    console.log(a + b)
-  } else if ( operator == '-') {
-    console.log(a - b)
-  }  else if ( operator == '*') {
-    console.log(a * b)
-  } else if ( operator == '/') {
-    if (b == 0) {
-      console.log('Invalid operator!')
-    } else {
-      console.log(a / b)
-    }
-  } else 
-  console.log('Invalid operator!')
-
+  var x = Number(prompt('请输入x'))
+  var y = Number(prompt('请输入y'))
+  var z = prompt
 </script>
-<script id="ch0104/20" type="#">
+<script id="ch0104/20" > 
   var a = Number(prompt('请输入a'))
   var b = Number(prompt('请输入b'))
   var c = Number(prompt('请输入c'))
   var y = b * b - 4 * a * c
-  if (y == 0) {
-
-  } else if (y > 0) {
-
-  } else if (y < 0) {
-    var sd = Math.sqrt(-y) // 根号负delta
-    var s1 = (-b / 2 / a).toFixed(5)
-    var s2 = (sd / 2 / a).toFixed(5)
-    var x1 = 'x1=' + s1 + '+' + s2 + 'i'
-    var x2 = 'x2=' + s1 + '-' + s2 + 'i'
-    console.log(x1 + ';' + x2)
+  var z = sqrt(y)
+  if (y > 0) {
+  var f1=(-b - z)/(2 * a).toFixed(5)
+  var f2=(-b + z)/(2 * a).toFixed(5)
+  var all1 = (String(x1) + '=' +String(f1))
+  var all2 = (String(x2) + '=' +String(f2))
+  console.log('all1')
+  console.log('all2')
+  }else if (y == 0) {
+  var z = sqrt(y)
+  var x1=x2=(-b - z)/(2 * a).toFixed(5)
+  } eles {
+    var z = sqrt(y)
+    var p = z/(2*a)
+    var x1 = (-b/2*a).toFixed(5)
+    var x2 = (-b/2*a).toFixed(5)
   }
 </script>
 <script id="ch0104/21" type="#">
@@ -421,13 +411,13 @@ var d = n - s
 console.log(d)
 </script>
 <script id="ch0105/01" type="#">
-  var n = Number(prompt('请输入n'))
+  var n = Number(prompt('请输入h'))
   var x = Number(prompt('请输入x'))
   var y = Number(prompt('请输入y'))
   var s = ((x + y)/2).toFixed(2)
   console.log(s)
   </script>
-<script id="ch0105/02" type="#">
+  <script id="ch0105/02" type="#">  
     var a = Number(prompt('请输入a'))
     var b = Number(prompt('请输入b'))
     var c = Number(prompt('请输入c'))
@@ -441,53 +431,13 @@ console.log(d)
     var k = Number(prompt('请输入k'))
     var l = Number(prompt('请输入l'))
     var x = ((a+b+c+d+e+f+g+h+i+j+k+l)/12).toFixed(2)
-    console.log('$'+x)
+    console.log('$s')
     </script>
-<script id="ch0105/03" type="#">
-  var a = Number(prompt('请输入a'))
-  var b = Number(prompt('请输入b'))
-  var x = ((a + b) / 2).toFixed(2)
-  console.log(x)
-  </script>
-<script id="ch0105/04" type="#">
-  var n = Number(prompt('请输入n'))
-  var a = Number(prompt('请输入a'))
-  var b = Number(prompt('请输入b'))
-  var c = Number(prompt('请输入c'))
-  var d = Number(prompt('请输入d'))
-  var s = a + b + c + d
-  var x = ((a + b + c + d) / n).toFixed(5)
-
-  console.log(s)
-  console.log(x)
-</script>
-<script id="ch0105/05" type="#">
-  var n = Number(prompt('请输入n'))
-  var a = Number(prompt('请输入a'))
-  var b = Number(prompt('请输入b'))
-  var c = Number(prompt('请输入c'))
-  var d = Number(prompt('请输入d'))
-  var e = Number(prompt('请输入e'))
-  var m = Math.max( a, b , c , d , e)
-
-  console.log(m)
-</script>
-<script id="ch0105/06" type="#">
-  var n = Number(prompt('请输入n'))
-  var a = Number(prompt('请输入a'))
-  var b = Number(prompt('请输入b'))
-  var c = Number(prompt('请输入c'))
-  var d = Number(prompt('请输入d'))
-  var e = Number(prompt('请输入e'))
-  var f = Number(prompt('请输入f'))
-  var m = Math.max( a, b , c , d , e, f)
-  var n = Math.min( a, b , c , d , e, f)
-  console.log(m-n)
-</script>
-
-
-
-
+  
+    var a = Number(prompt('请输入a'))
+    var b = Number(prompt('请输入b'))
+    var x = ((a+b)/2).toFixed(2)
+    console.log('$'+x)
 
 
 
