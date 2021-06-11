@@ -539,67 +539,16 @@ console.log(d)
 <script id="ch0105/10" type="#">
   var m = Number(prompt('请输入m'))
   var n = Number(prompt('请输入n'))
-  var m1 = Math.floor(m / 17)
-  var n1 = Math.floor(n / 17)  
-  var sum = 0
-  var sumall = 0 
+  if (m % 2 == 0 && m < n) {
+    var m = m + 1
+    var n = m + m
 
-  while (m1 < n1) {
-    sum = 17 * (m1 + 1)
-    sumall = sumall + sum
-    m1 = m1 + 1
-  } 
-  console.log(sumall)
+  }
+  console.log(180 * (n-2) - a - b)
 </script>
-<script id="ch0105/11" >
-  var n = Number(prompt('请输入n'))
-  var count = 0
-  var aone = 0
-  var afive = 0
-  var aten = 0
-  while (count < n) {
-    var a = Number(prompt('请输入a'))
-    count = count + 1
-     if (a == 1 ) {
-      aone = aone + 1
-    } if (a == 5) {
-      afive = afive + 1
-    } if (a == 10 ) {
-      aten = aten + 1
-    }
-  } 
- console.log(aone)
- console.log(afive)
- console.log(aten)
-</script>
-<script id="ch0105/12" >
-  var n = Number(prompt('请输入n'))
-  var m = Number(prompt('请输入m'))
-  var count = 0
-  var am = 0
-  while (count < n) {
-    var a = Number(prompt('请输入a'))
-    count = count + 1 
-      if (a == m ) {
-      am = am + 1
-    }
-    }
- console.log(am)
-</script>
-<script id="ch0105/13" >
-  var n = Number(prompt('请输入n'))
-  var m = Number(prompt('请输入m'))
-  var count = 0
-  var am = 0
-  while (count < n) {
-    var a = Number(prompt('请输入a'))
-    count = count + 1 
-      if (a == m ) {
-      am = am + 1
-    }
-    }
- console.log(am)
-</script>
+
+
+
 
 
 
