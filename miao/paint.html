@@ -61,9 +61,13 @@
   // 不可更改上面的代码
   // 你的代码写在这里
   // YOUR CODE GOES BELOW
+  var tron = Math.sqrt(3)
   dot(42, 42, 'red') //点
   for (i=0 ;i<500;i++)  dot(i, 100, 'black')  ,dot(100, i,'black')//直线
   for (d=0 ;d<707;d++) dot(d, d, 'black') //对角线
-  for (w=0 ;w<100;w++) dot(w, w, 'black') 
+  for (w=0 ;w<500;w=w+2) dot(200, w, 'black') //一个实点一个空点的虚线
+  for (wl=0 ;wl<500;wl=wl+3) dot(300, wl, 'black') // 画一条两个实点两个空点的虚线
+  for (ws=0 ;ws<500;ws=ws+5) dot(400, ws, 'black')// 画一条三个实点两个空点的虚线
+  for (sh=0 ;sh<300;sh=sh+1) dot(sh,tron*sh, 'black')// 30度线
 </script>
 </html>
