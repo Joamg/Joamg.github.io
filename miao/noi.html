@@ -798,7 +798,25 @@ console.log(a)
   console.log(l)
   
   </script>
-  <script id="ch0105/25"  type="#"> </script>
+  <script id="ch0105/25"  type="#"> 
+    for (var i = 81; i <= 342; i++) {
+      var g7 = i % 7
+      var s7 = parseInt(i / 7) % 7
+      var b7 = parseInt(i / 49)
+
+      var g9 = i % 9
+      var s9 = parseInt(i / 9) % 9
+      var b9 = parseInt(i / 81)
+
+      if (g7 == b9 && s7 == s9 && b7 == g9) {
+        console.log(i)
+        console.log('' + b7 + s7 + g7)
+        console.log('' + b9 + s9 + g9)
+        break
+      }
+    }
+
+  </script>
   <script id="ch0105/26" type="#"> 
   var n = Number(prompt('n'))
   var k = 0
@@ -808,32 +826,49 @@ console.log(a)
   var b = (Math.floor(a / 100)) % 10
   var s = (Math.floor(a / 10)) % 10
   var g = a % 10
-
     if (g - q - b - s>0) {
-      k += 1
+      k++
     }
   } 
   console.log(k)
   </script>
   <script id="ch0105/27"  type="#"> 
   var k = Number(prompt('k'))
-  for (i=0 ;i<k;i++) {
-    var n = 1+
+  var n = 0 
+  for (var i = 1 ; ;i++) {
+    n += 1 / i
+    if (n > k)
+    break
   }
-  
+  console.log(i)
   </script>
   <script id="ch0105/28"  type="#">
   var n = Number(prompt('n'))
-  for ()
-  var g = a % 100
-  
+  do {
+    var digit = n % 10
+    console.log(digit)
+    n = (n - digit) / 10
+  } while (n > 0)
   </script>
-  <script id="ch0105/29"  type="#"> </script>
+  <script id="ch0105/29"  type="#"> 
+  
+
+    
+  </script>
   <script id="ch0105/30"  type="#"> </script>
   <script id="ch0105/31"  type="#"> </script>
   <script id="ch0105/32"  type="#"> </script>
   <script id="ch0105/33"  type="#"> </script>
-  <script id="ch0105/34"  type="#"> </script>
+  <script id="ch0105/34"  type="#"> 
+  n = Number(prompt())
+  var sum = 0
+  var fact = 1
+  for (var i=1 ;i<=n;i++) {
+    fact *= i   
+    sum += fact
+  }
+console.log(sum)
+  </script>
   <script id="ch0105/35"  type="#"> </script>
   <script id="ch0105/36"  type="#"> </script>
   <script id="ch0105/37"  type="#"> </script>
