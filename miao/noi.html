@@ -924,6 +924,7 @@ console.log(sum)
   </script>
 
   <script id="complete-number" >
+    var n = Number(prompt('n'))
     function isCompletenumber (n) {
       var sum = 0
       for (var i = 1; i < n; i++) {
@@ -933,14 +934,14 @@ console.log(sum)
       }
         return sum == n
       }
-
+      console.log(isCompletenumber (n))
   </script>
   
 <script id="complete-numbers" >
     
-    for (var i = 1; i < 1000; i++)  {
-      function (isCompletenumber (n)) {
-        console.log(n)
+    for (var x = 1; x < 1000; x++)  {
+      if (isCompletenumber (x)) {
+        console.log(x)
       }
     }
 
