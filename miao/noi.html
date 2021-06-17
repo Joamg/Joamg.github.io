@@ -899,8 +899,10 @@ console.log(sum)
   <script id="ch0105/44"  type="#"> </script>
   <script id="ch0105/45"  type="#"> </script>
 
-  <script id="narcissistic" >
- function narcissistic(n) {
+  <script id="narcissistic" > //水仙花数
+  var n = Number(promp('n'))
+  function narcissistic(n) {
+ 
 
  }
 
@@ -910,12 +912,19 @@ console.log(sum)
   
     </script>
 
-  <script id="palindrom" >
+  <script id="palindrom" type="#"> //回文数
   var n = Number(prompt('n'))
-  
-
- 
-  
+  function isPalindrom(n) {
+    var reverse = 0
+    var intn = n
+    while (n) {
+      var digit = n % 10 
+      reverse = reverse * 10 + digit
+      n = (n - digit) / 10
+    }
+    return reverse == intn
+  }
+  console.log(isPalindrom(n))
   </script>
 
   <script id="weekday" >
@@ -923,7 +932,7 @@ console.log(sum)
   
   </script>
 
-  <script id="complete-number" >
+  <script id="complete-number" > //完全数
     var n = Number(prompt('n'))
     function isCompletenumber (n) {
       var sum = 0
@@ -936,7 +945,7 @@ console.log(sum)
       }
   </script>
   
-<script id="complete-numbers" >
+<script id="complete-numbers" > //1000以内完全数
     
     for (var x = 1; x < 1000; x++)  {
       if (isCompletenumber (x)) {
@@ -1004,9 +1013,15 @@ if ( b <= n ) {
 console.log(i)
 </script>
 
+function power(a ,n) {
+  var r=1
+  for (var i = 0;i < n;i++) {
+    r *= a
 
-
-
+  }
+return r
+}
+console.log(power(2,10)) 
 
 
 
