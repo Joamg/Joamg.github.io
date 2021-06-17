@@ -66,12 +66,40 @@
   for (i=0 ;i<500;i++)  dot(i, 100, 'black')  ,dot(100, i,'black')//直线
   for (d=0 ;d<707;d++) dot(d, d, 'black') //对角线
   for (w=0 ;w<500;w=w+2) dot(200, w, 'black') //一个实点一个空点的虚线
-  for (wl=0 ;wl<500;wl=wl+3) dot(300, wl, 'black') // 画一条两个实点两个空点的虚线
-  for (ws=0 ;ws<500;ws=ws+5) dot(400, ws, 'black')// 画一条三个实点两个空点的虚线
+  for ( var wl = 0 ;wl <= 500;wl +=4) 
+  if (wl % 4 == 0) {
+    dot(300, wl, 'black') // 画一条两个实点两个空点的虚线
+    dot(300, wl + 1, 'black') 
+  }
+  for ( var wl = 0 ;wl <= 500;wl +=5) 
+  if (wl % 5 == 0) {
+    dot(400, wl, 'black') // 画一条两个实点两个空点的虚线
+    dot(400, wl + 1, 'black') 
+    dot(400, wl + 2, 'black') 
+  }
   for (sh=0 ;sh<300;sh=sh+1) dot(sh,tron*sh, 'black')// 30度线
   for (ks=80 ;ks<=280;ks=ks+1) dot(ks,130, 'black')  //空心矩形
   for (ksc=130 ;ksc<=190;ksc=ksc+1) dot(80,ksc, 'black')//
   for (ks=80 ;ks<=280;ks=ks+1) dot(ks,190, 'black')//
-  for (ksc=130 ;ksc<=190;ksc=ksc+1) dot(280,ksc, 'black') //空心矩形
+  for (ksc=130 ;ksc<=190;ksc=ksc+1) dot(280,ksc, 'black') 
+  //空心矩形
+  var x1=50, y1=100
+  var x2= 150, y2=200
+  for (x = x1 ;x <= x2; x++) {
+    for (y = y1; y <= y2; y++) {
+      dot (x, y+100,'lightgreen')
+    }
+  } //空心圆
+
+  for (var x = -100 * Math.SQRT1_2; x <=100 * Math.SQRT1_2  ; x+=1) {
+    y = Math.sqrt(100 * 100 - x * x)
+    dot (x + 350, y + 350, 'black')
+    dot (x + 350, -y + 350, 'black')
+  }
+  for (var y = -100 * Math.SQRT1_2; y <=100 * Math.SQRT1_2  ; y+=1) {
+    x = Math.sqrt(100 * 100 - y * y)
+    dot (x + 350, y + 350, 'black')
+    dot (-x + 350, y + 350, 'black')
+  }
 </script>
 </html>

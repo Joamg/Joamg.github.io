@@ -853,7 +853,7 @@ console.log(a)
   <script id="ch0105/29"  type="#"> 
   
 
-    
+
   </script>
   <script id="ch0105/30"  type="#"> </script>
   <script id="ch0105/31"  type="#"> </script>
@@ -881,6 +881,101 @@ console.log(sum)
   <script id="ch0105/44"  type="#"> </script>
   <script id="ch0105/45"  type="#"> </script>
 
+  <script id="narcissistic" >
+    var n = Number(prompt('n'))
+  
+    var a = parseInt(n / 100)
+    var b = parseInt(n / 10) % 10
+    var c =  n % 10
+    var isNarcissistic = a * a * a + b * b * b + c * c * c
+    if (isNarcissistic == n)  {
+    console.log('YES')
+    } else {
+    console.log('NO')
+    }
+  
+  </script>
+    <script id="narcissistics" >
+      var a = 0
+      var b = 0
+      var c = 0
+      var d = 0
+      
+      for (n = 100; n <= 999; n++ )  {
+      a = parseInt(n / 100)
+      b = parseInt(n / 10) % 10
+      c =  n % 10
+      var isNarcissistic = a * a * a + b * b * b + c * c * c
+        if (isNarcissistic == n) {
+          console.log(n)
+        }
+      }  
+      for (i = 1000; i <= 9999; i++ )  {
+      a = parseInt(i / 1000)
+      b = parseInt(i / 100) % 10
+      c = parseInt(i / 10) % 10
+      d = i % 100
+      var isNarcissistic = a * a * a * a + b * b * b * b + c * c * c * c + d * d * d * d
+        if (isNarcissistic == i) {
+          console.log(i)
+        }
+      }  
+    </script>
+
+  <script id="palindrom" >
+  var n = Number(prompt('n'))
+  
+
+ 
+  
+  </script>
+
+  <script id="weekday" >
+    var n = Number(prompt('n'))
+  
+  </script>
+
+  <script id="complete-number" >
+    var n = Number(prompt('n'))
+  
+  </script>
+
+<script id="complete-numbers" >
+  var n = Number(prompt('n'))
+
+</script>
+<script id="prime" >
+  var n = Number(prompt('n'))
+
+</script>
+
+<script id="primes" >
+  var n = Number(prompt('n'))
+
+</script>
+
+<script id="lcf&lcm" >
+  var n = Number(prompt('n'))
+
+</script>
+
+<script id="sqrt" >
+  var n = Number(prompt('n'))
+  a = n / 2 
+  b = a * a
+if ( b <= n ) {
+  for (var i = 0 ;i <= 4; i+=0.001) {
+    n == i*i
+    console.log(i)
+  }
+}else ( b > n ) {
+  for ( var x > 4 ; ; x+=0.001) {
+    n == x*x
+    console.log(x)
+}
+  }  
+
+</script>
 
 
 
