@@ -855,7 +855,25 @@ console.log(a)
 
 
   </script>
-  <script id="ch0105/30"  type="#"> </script>
+  <script id="ch0105/30"  type="#"> 
+  var m = Number(prompt('m'))
+  var k = Number(prompt('k'))
+  var n = m
+var count = 0
+   
+    do {
+      var digit = m % 10
+      if (digit == 3) {
+        count++
+      }
+      m = (m - digit) / 10 //
+    } while (m)
+  if (m % 19 == 0 && n % 19 == 0) {
+    console.log('YES')
+  } else {
+    console.log('NO')
+  }
+  </script>
   <script id="ch0105/31"  type="#"> </script>
   <script id="ch0105/32"  type="#"> </script>
   <script id="ch0105/33"  type="#"> </script>
@@ -882,44 +900,14 @@ console.log(sum)
   <script id="ch0105/45"  type="#"> </script>
 
   <script id="narcissistic" >
-    var n = Number(prompt('n'))
-  
-    var a = parseInt(n / 100)
-    var b = parseInt(n / 10) % 10
-    var c =  n % 10
-    var isNarcissistic = a * a * a + b * b * b + c * c * c
-    if (isNarcissistic == n)  {
-    console.log('YES')
-    } else {
-    console.log('NO')
-    }
+ function narcissistic(n) {
+
+ }
+
   
   </script>
     <script id="narcissistics" >
-      var a = 0
-      var b = 0
-      var c = 0
-      var d = 0
-      
-      for (n = 100; n <= 999; n++ )  {
-      a = parseInt(n / 100)
-      b = parseInt(n / 10) % 10
-      c =  n % 10
-      var isNarcissistic = a * a * a + b * b * b + c * c * c
-        if (isNarcissistic == n) {
-          console.log(n)
-        }
-      }  
-      for (i = 1000; i <= 9999; i++ )  {
-      a = parseInt(i / 1000)
-      b = parseInt(i / 100) % 10
-      c = parseInt(i / 10) % 10
-      d = i % 100
-      var isNarcissistic = a * a * a * a + b * b * b * b + c * c * c * c + d * d * d * d
-        if (isNarcissistic == i) {
-          console.log(i)
-        }
-      }  
+  
     </script>
 
   <script id="palindrom" >
@@ -936,14 +924,38 @@ console.log(sum)
   </script>
 
   <script id="complete-number" >
-    var n = Number(prompt('n'))
-  
-  </script>
+    function isCompletenumber (n) {
+      var sum = 0
+      for (var i = 1; i < n; i++) {
+         if (n % i == 0) {
+           sum += i 
+         }
+      }
+        return sum == n
+      }
 
+  </script>
+  
 <script id="complete-numbers" >
-  var n = Number(prompt('n'))
+    
+    for (var i = 1; i < 1000; i++)  {
+      function (isCompletenumber (n)) {
+        console.log(n)
+      }
+    }
+
+     function isCompletenumber (n) {
+      var sum = 0
+      for (var i = 1; i < n; i++) {
+         if (n % i == 0) {
+           sum += i 
+         }
+      }
+        return sum == n
+      }
 
 </script>
+
 <script id="prime" >
   var n = Number(prompt('n'))
 
@@ -976,8 +988,21 @@ if ( b <= n ) {
   }  
 
 </script>
+<script>
+  var su 
+  for (i = 2; i <= 100; i++) {
+    console.log(n)
+  }
 
-
+ function isPrime(n) {
+   for (i = 2; i <= n / 2 +1; i++) {
+     if (n % 2 ==0)
+     return false
+   }
+   return ture
+ }
+console.log(i)
+</script>
 
 
 
