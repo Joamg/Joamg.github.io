@@ -1013,20 +1013,30 @@ if ( b <= n ) {
 console.log(i)
 </script>
 
-function power(a ,n) {
-  var r=1
-  for (var i = 0;i < n;i++) {
-    r *= a
-
+ var n = Number(prompt('n'))
+ var m = 0
+  for(var i = 1; i <= n;i++) {
+   m = Math.log(n)/Math.log(3)
+   if(m % 1 === 0) { {
+    console.log('true')
+    break
+  } else {
+    console.log('false')
   }
-return r
-}
-console.log(power(2,10)) 
+} 
+ console.log('false')
 
 
-
-
-
-
+<script>
+var trailingZeroes = function(n) {
+    if(n < 5) return 0 
+    var count = 0;
+    while(n >= 5){
+        count += Math.floor(n / 5)
+        n = parseInt(n / 5)
+    }
+    return count;
+};
+</script>
 
 
