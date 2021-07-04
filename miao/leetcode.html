@@ -1,6 +1,19 @@
 <script > // 504 十进制转为七进制
-  var convertToBase7 = function(num) {
-    
+  var convertToBase7 = function(num) { 
+    if (num === 0) return '0'
+    var con = '';
+    var isPositiveNum = true;
+     if (num < 0) {
+         num = -num;
+         isPositiveNum = false;
+     }
+     while (num !== 0) {
+         var senum = num % 7;
+         con += senum;
+         num = Math.floor(num / 7);
+     }
+     con = con.split('').reverse().join('')
+     return isPositiveNum ? con : '-' + con;
   }; 
 </script>
 
@@ -41,5 +54,555 @@
  </script>
 
 <script > // 7 数字反转
- 
+ var reverse = function(x) {
+  var sign = 1
+var m = Math.pow(2,31)-1
+if (x < 0) {
+  sign = -1
+  x = -x
+}
+var conult = 0
+
+do {
+  var digit = x % 10
+  conult = conult * 10 + digit
+  x = (x - digit) / 10
+} while (x > 0)
+c = Math.abs(sign * conult)
+if (c > m) {
+  return 0
+} else {
+  return (sign * conult)
+}
+  };
   </script>
+
+<script> //168 输出excel列数
+var convertToTitle = function(columnNumber) {
+  if (columnNumber === 0) {
+        return 0;
+    }
+    var str = []
+    while(columnNumber>0){
+        columnNumber--
+        code = String.fromCharCode(columnNumber%26+65)
+        columnNumber = Math.floor(columnNumber/26)
+        str.push(code)
+    }
+    return str.reverse().join("")
+  };
+
+</script>
+
+<script> //1 两数之和
+  var twoSum = function(nums, target) {+
+      for (var i= 0; i < nums.length; i++) {
+        for (var j= i + 1; j < nums.length; j++ ) {
+          if (nums[i] + nums[j] == target) {
+            return [i, j]
+          }
+        }
+        return []
+      }
+};
+</script>
+
+<script>
+  var sortedSquanum = function(nums) {
+    var length = nums.length
+    for (var i = 0; i < length; i++) {
+      nums[i] = nums[i] * nums[i]
+    }
+    var ns = nums
+    ns.sort((a,b)=>{return a-b})
+    return ns
+  };
+</script>
+
+<script>
+var singleNumber = function(nums) {
+  nums.sort((a, b) => a - b) 
+    for (var i = 0; i < nums.length; i+=2) {
+      if (nums[i] !== nums[i + 1]) 
+      return nums[i];
+  }
+  };
+
+</script>
+
+<script>
+var plusOne = function(digits) {
+  for(var i = digits.length - 1; i >= 0; i--){
+        if(digits[i] < 9) {
+            digits[i]++;
+            return digits;
+        }
+        digits[i] = 0;
+    }
+    
+    var num = Array(digits.length + 1).fill(0);
+    num[0] = 1;
+    return num;
+  };
+  </script>
+
+<script>
+var fizzBuzz = function(n) {
+    var result = [ ]
+   for (var i=1; i <= n; i++) {
+       if (i % 3 == 0 && i % 5 == 0){
+           result.push('FizzBuzz') 
+   } else if (i % 3 == 0) {
+       result.push('Fizz') 
+   } else if (i % 5 == 0) {
+       result.push('Buzz') 
+   } else {
+       result.push(String(i))
+   }
+   }
+    return result
+};
+</script>
+
+<script>
+  var addBinary = function(a, b) {
+  var sum = []
+  for     
+  };
+
+
+</script>
+
+<script> //浏览器对 leetcde报错
+var moveZeroes = function(nums) {
+    for (var i = 0; i <nums.length; i++ ) {
+      if(nums[i] == 0) {
+        var item = nums.splice(i, 1)
+        nums = nums.concat(item)
+      }
+    }
+    return nums
+  };
+</script>
+
+<script> //leetcode正确
+var moveZeroes = function(nums) {
+  var j = 0
+  for (var i = 0; i < nums.length; i++ ) {
+   if (nums[i] !== 0) {
+       j++ 
+       nums[j - 1] = nums[i]
+   }
+  }
+  for (;j < nums.length; j++){
+      nums[j] = 0
+  }
+  return nums 
+};
+</script>
+
+
+<script>
+
+var addBinary = function(a, b) {
+    
+  };
+</script>
+
+<script>
+var missingNumber = function(nums) {
+    var l = nums.length
+    var sum = l * (l + 1) * 2
+    for(i = 0; i < l; i++) {
+      sum -=nums[i]
+    }
+    return sum
+};
+</script>
+
+<script>
+  var countBits = function(n) {
+    result = []
+    item = n.toString(2)
+    for (var i = 0; i < n;i++) {
+
+    }
+  };
+</script>
+
+<script> //507. Perfect Number
+var checkPerfectNumber = function(num) {
+  var sum = 0
+    for (var i = 1;i < num; i++) {
+      if (num % i == 0) {
+            sum += i
+      }
+   
+    }
+  };
+</script>
+
+<script>
+num = Number(prompt())
+for (var i = 1;i < num; i++) {
+      if (num % i == 0) {
+           console.log(i)
+      }
+    }
+</script>
+
+<script>
+
+var addDigits = function(num) {
+  if (num == 0) return 0
+       while(num) {
+        var digit = num % 10
+        num = (num-digit) / 10 + digit
+        if (num <10) {
+    return num
+        }
+    }
+};
+</script>
+<script>
+  var searchInsert = function(nums, target) {
+    for(let i=0; i<nums.length; i++) {
+        if(target === nums[i] || target < nums[i]) {
+            return i
+        }
+    }
+    return nums.length
+};
+</script>
+
+<script>
+  var findMaxConsecutiveOnes = function(nums) {
+    var max = 0
+    var count = 0
+    for (var i = 0; i < nums.length; i++) {
+      if(nums[i] == 1) {
+        count++
+        if (count > max) {
+          max = count
+        }
+      } else {
+        count = 0
+      }
+    }
+return max
+};
+</script>
+
+<script>
+  var maxSubArray = function(nums) {
+    var max = nums[0]
+    var sum = Math.max(max, 0) //将max的值与0比较大小 ，max确定正负
+    for (var i = 1; i < nums.length; i++) {
+        sum += nums[i]
+        max = Math.max( max, sum)
+        sum = Math.max(sum, 0)
+    }
+    return max
+};
+</script>
+
+<script> //704. Binary Search
+var search = function(nums, target) {
+      var i = 0
+      var j = nums.length - 1;
+      while(i <= j) {
+        if (nums[i] === target) return i
+        if (nums[j] === target) return j
+        i++
+        j--
+    }
+    return -1
+};
+</script>
+
+<script>
+  var maxArea = function(height) {
+    var max = 0
+    var sum = 0
+    var i= 0
+    var j = height.length - 1
+    
+    for(i = 0;i < height.length;i++) {
+      while(i < j) {
+      var  sum = (j - i) * (height[j] - height[i]) 
+      if (sum > max) {
+        max = sum
+      }
+      }
+    }
+  };
+</script>
+
+<script>
+  var isIsomorphic = function(s, t) {
+    for (var i = 0; i < s.length; i++) 
+      if (s.indexOf(s[i]) !== t.indexOf(t[i])) return false
+    
+    return true
+
+  };
+</script>
+
+
+
+
+
+
+<script>
+
+  function slice(ary, start, end) {
+    if (end > array.length) {
+      end = ary.length
+    }
+    var result = []
+    for (i=start; i<end; i++) {
+      result.push(ary[i])
+    }
+    return result
+  }
+</script>
+
+<script>
+  var hammingWeight = function(n) {
+    let sum = 0;
+    
+    while(n != 0) {
+        sum += n & 1;
+        n = n >>> 1;
+    }
+    
+    return sum;
+    
+  };
+
+</script>
+
+<script>
+ var sum = 0
+
+while (n != 0) {
+  sum += n & 1
+  n = n >>> 1
+}
+return sum
+</script>
+
+<script>
+  function rand() {
+    while(true) {
+      var a = f()
+      var b = f()
+      if(a ==1 && b == 1) {
+        return 0
+      }else
+        }
+  }
+</script>
+
+<script> //   844. Backspace String Compare
+  var backspaceCompare = function(s, t) {
+  var result = []
+  for(i = 0; i < s.length; i++) {
+    if(s[i] === '#') {
+      result.pop(s[i])
+    } else {
+      result.push(s[i])
+    }
+  }
+     s = result.join('')
+
+
+    result = []
+  for(i = 0; i < t.length; i++) {
+    if(t[i] === '#') {
+      result.pop(t[i])
+    } else {
+      result.push(t[i])
+    }
+  }
+  t =result.join('')
+  result s == t
+};
+
+</script>
+
+<script> //20. Valid Parentheses
+  var isValid = function(s) {
+    var result = []
+    for (i = 0; i < s.length; i++) {
+        if(s[i] == '(' || s[i] == '{' || s[i] == '[') {
+            result.push(s[i])
+        }
+        if(s[i] == ')' ) {
+         if (result.pop() !== '(') {
+           return false
+          }
+        }
+        if(s[i] == ']' ) { 
+         if (result.pop() !== '[') {
+           return false
+          }
+        }
+        if(s[i] == '}' ) {
+         if (result.pop() !== '{') {
+           return false
+          }
+        }
+    }
+    return result.length == 0
+}; 
+</script>
+
+<script> //70. Climbing Stairs
+  var climbStairs = function(n) {
+       var a = 1, b = 2, next;
+    
+    for(var i = 3; i <= n; i++) {
+        next = a + b;
+        a = b;
+        b = next;
+    }
+    return n == 1 ? a : b; //如果n=1就输出a否则输出b
+};
+</script>
+
+<script> // 53. Maximum Subarray
+var maxSubArray = function(nums) {
+     var max = nums[0]            //定义max的值为sum数组的第一个
+    var sum = Math.max(max, 0)    //比较sum与0的大小
+    for (var i = 1; i < nums.length; i++) { //
+        sum += nums[i]
+        max = Math.max( max, sum)
+        sum = Math.max(sum, 0)
+    }
+    return max
+};
+</script>
+
+<script> //118. Pascal's Triangle
+  var generate = function(numRows) {
+    var result = numRows[]
+    for(var i = 0; i < numRows.length; i++) {
+      result = numRows[i]
+    }
+  };
+</script>
+
+
+<script>
+  /**
+ * @param {string} s
+ * @param {string} t
+ * @return {boolean}
+ */
+var isIsomorphic = function(s, t) {
+    var map1 = {}
+    var map2 = {}
+    
+    for (var i = 0; i < s.length; i++) {
+        var a = s[i]
+        var b = t[i]
+        
+        if (a in map1) { // s中的字符已经遇到过，则其应该有对应的字符
+            if (map1[a] !== b) { // t里就必须是s中该字符对应的符号
+                return false
+            }
+        } else { // 新出现的字符
+            map1[a] = b // 建立映射
+            if (b in map2) { // 如果对应到t里的字符不是新的，则肯定不对
+                return false
+            } else {
+                map2[b] = a // 如果t里也是新的，则记录一下
+            }
+        }
+    }
+    
+    return true
+};
+
+function unify(str) {
+    var pattern = ''
+    var map = {}
+    
+    var patternCharCode = 65
+    
+    for (var i = 0; i < str.length; i++) {
+        var c = str[i]
+        if (c in map) {
+            pattern += map[c]
+        } else {
+            var patternChar = String.fromCharCode(patternCharCode++)
+            map[c] = patternChar
+            pattern += map[c]
+        }
+    }
+    return pattern
+}
+</script>
+
+<script>
+  /**
+ * @param {number[]} nums
+ * @return {number}
+ */
+  var maxSubArray = function (array) {
+    if (array.length == 0) {
+      return -Infinity
+    }
+    if (array.length == 1) {
+      return array[0]
+    }
+
+    var mid = array.length >> 1
+
+    var leftMax = array[mid - 1]
+    var leftSum = leftMax
+    for (var i = mid - 2; i >= 0; i--) {
+      leftSum += array[i]
+      if (leftSum > leftMax) {
+        leftMax = leftSum
+      }
+    }
+
+    var rightMax = array[mid]
+    var rightSum = rightMax
+    for (var i = mid + 1; i < array.length; i++) {
+      rightSum += array[i]
+      if (rightSum > rightMax) {
+        rightMax = rightSum
+      }
+    }
+
+    var midMax = leftMax + rightMax
+
+    var left = array.slice(0, mid)
+    var right = array.slice(mid)
+
+    var leftMax = maxSubArray(left)
+    var rightMax = maxSubArray(right)
+
+    return Math.max(midMax, leftMax, rightMax)
+  };
+</script>
+
+<script> 
+  var isAnagram = function (s, t) {
+    var j = s.length
+    var k = s.length
+    if (j !== k) return false
+    for(var i = 0; i < s.length; i++) {
+        if(s[i] == )
+    }
+  }
+</script>
+
+
+
+
+
+   
