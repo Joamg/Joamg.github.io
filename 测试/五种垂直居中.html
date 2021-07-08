@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+* {
+  background-color: rgba(0,0,0,0.08);
+  box-shadow: inset 0 0 1px red;
+}
+html {
+  zoom: 2;
+}
+
+div[a] {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div[a] span {
+  flex-shrink: 0;
+  width: 150px;
+  height: 150px;
+  xmargin: auto;
+}
+
+main[b] {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+main[b] section {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+section[c] {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+section[c] > section {
+  width: 80px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+section[d] {
+  width: 200px;
+  height: 200px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+section[d] div {
+  width: 50%;
+}
+
+  </style>
+</head>
+<body>
+  <div a>
+    <span>aaaa</span>
+  </div>
+  <hr>
+  <main b>
+    <section>aaaa</section>
+  </main>
+  <hr>
+  <section c>
+    <section>aaaa</section>
+  </section>
+  <hr>
+  <hr>
+  <hr>
+  <hr>
+  <hr>
+  <section d>
+    table
+  </section>
+</body>
+</html>

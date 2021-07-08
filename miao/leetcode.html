@@ -601,6 +601,110 @@ function unify(str) {
   }
 </script>
 
+<script> //242. Valid Anagram
+var isAnagram = function(s, t) {
+    if (s.length !== t.length) return false 
+    
+    var map1 = {}  //定义一个空对象
+    
+    for (var i = 0; i < s.length; i++) { // 遍历数组 s 
+        var c = s[i]     //将s[i]的值赋给 c
+        if(map1[c]) {    // 计算c在map1里出现的次数
+            map1[c]++
+        } else {
+            map1[c] = 1
+        }
+    }
+     var map2 = {}
+    
+    for (var i = 0; i < t.length; i++) {
+        var c = t[i]
+        if(map2[c]) {
+            map2[c]++
+        } else {
+            map2[c] = 1
+        }
+    }
+    for(var k in map1) {
+        if(map1[k] !== map2[k]) {
+            return false
+        }
+    }
+     for(var k in map2) {
+        if(map1[k] !== map2[k]) {
+            return falsek
+        }
+    }
+    return true
+};
+</script>
+
+<script> //21. Merge Two Sorted Lists
+var mergeTwoLists = function(l1, l2) {
+    var dummy = new ListNode (0)
+    var p = dummy
+
+    while(l1 && l2) {
+       if (l1.val < l2.val) {
+            p.next = l1
+            l1 = l1.next
+            p = p.next
+        } else {
+            p.next = l2
+            l2 = l2.next
+            p = p.next
+        }
+        
+    }
+
+    p.next = l1 || l2
+
+    return dummy.next
+  };
+</script>
+
+<script>
+function map(array , transform) {
+   var mapped = [];
+  for (var i = 0; i < array.length; i++)
+  mapped.push(transform(array[i])); 
+  return mapped;
+}
+</script>
+
+<script> //数组求和
+  var array = [1,2 ,3 ,4, 5]
+  var sum = 0
+  for(var i = 0; i< array.length; i++) {
+    sum = array[i] + sum
+  }
+  return sum
+</script> 
+
+<script> //数组乘积
+  var array = [1,2 ,3 ,4, 5]
+  var product = 1
+  for(var i = 0; i< array.length; i++) {
+    product = array[i] * product
+  }
+  console.log(product)
+</script> 
+
+<script> //求数组最大值
+  var array = [1,2 ,3 ,4, 5]
+  var max = -Infinity
+  for(var i = 0; i< array.length; i++) {
+   max = Math.max(max, array[i])
+  }
+  console.log(max)
+</script>
+
+
+
+
+
+
+
 
 
 
