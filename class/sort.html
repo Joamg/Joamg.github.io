@@ -1,0 +1,76 @@
+<!-- 随机数组  Array(100).fill(0).map(it => Math.random() * 100 | 0) -->
+
+<script> //冒泡排序 
+/**
+ * 时间复杂度: O(n * n)
+ * 空间复杂度: O(1)   
+ */
+  function bubbleSort(array) {
+      for (j = 0; j < array.length - 1; j++) {
+      var swapped = false            //引入swapeed是为了判断是否进入了第二层循环就不用继续进入了 直接break
+      for (i = 0; i < array.length - 1 - j; i++) {
+        if (array[i] > array[i + 1]) {
+          swapped = true            
+           var t = array[i]         //引入t的作用是t作为中转对array[i] 和array[i + 1]进行互换位置
+          array[i] = array[i + 1]                                      
+          array[i + 1] = t  
+        } 
+      }  
+      if(!swapped) {
+        break
+      }
+    }
+    return array
+  }
+</script>
+
+<script> //选择排序
+/**
+ * 时间复杂度: O(n * n)
+ * 空间复杂度: O(1)   
+ */
+  function selectSort(array) {
+    for (j = 0; j < array.length - 1; j++) {
+      var minIndex = j          
+        for (var i = j + 1; i < array.length; i++) {  
+        if(array[i] < array[minIndex]) {        
+          minIndex = i                    //寻找最大值的下标
+        }
+      }
+      var t = array[j]
+      array[j] = array[minIndex]
+      array[minIndex] = t
+    }
+      return array
+  }
+</script>
+
+<script> //插入排序
+/**
+ * 插入顺序: 将无序部分的第一个数插入到有序部分的正确位置
+ * 时间复杂度: O(n * n)
+ * 空间复杂度: O(1)   
+ */
+  function insertSort(array) {
+    for (var i = 1; i < array.length; i++) {
+      var t = array[i]
+      for (var j = i - 1; j >= 0; j--) {
+        if(array[j] > t) {
+          array[j + 1] = array[j]
+        } else {
+          break
+        }
+      }
+      array[j + 1] = t
+    }
+    return array
+  }
+
+
+</script>
+
+<script>//归并排序
+  function mergeSort(array) {
+    var midIdx = array.length >> 1
+  }
+</script>

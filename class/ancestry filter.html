@@ -1,0 +1,20 @@
+<script src="ancestry.js"></script>
+<script>
+  var ancestry = JSON.parse(ANCESTRY_FILE)
+  
+  function filter(array, test) {
+    var result = []
+    for (i = 0; i < array.length; i++) {
+     if (test(array[i], i) === true) {
+       result.push(array[i])
+     }
+    }
+    return result
+  } 
+
+    filter(ancestry, (item, index) => {
+      if (item.born >= 1900) {
+        return true
+      }
+    })
+</script>

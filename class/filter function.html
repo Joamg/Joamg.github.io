@@ -1,0 +1,11 @@
+<script>
+  var ancestry = JSON.parse(ANCESTRY_FILE)
+  function filter(array: Array, test: function): Array {
+    for (i = 0; i < array.length; i++) {
+     if(test(array[i], i) === true) {
+       result.push(arrray[i])
+     }
+    }
+    return result
+  }
+</script>
