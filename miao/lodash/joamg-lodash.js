@@ -1,14 +1,13 @@
 var joamg = function () {
-  var a = []
-  function chunk (array, size) {
-    if (array.length < size) {
-      return array
-    } else {
-      for (var i = 0; i < array.length; i++) {
-
-        
-      }
+  function chunk(array, size) {
+    var newarr = []
+    var a =[]
+    var index = 0 
+    while(index < array.length) {
+      newarr.push(array.slice(index, index = index + size))
     }
+    a.push(newarr)
+    return a
   }
 
 
@@ -24,13 +23,24 @@ var joamg = function () {
 
 
   function flattenDeep(array) {
+    var a = []
     for(i = 0; i < array.length; i++) {
-      if(array.length == 1 ) return array
-      else 
-      ()
+      if(array.length == 1 ) {
+        return array
+      } else {
+      }
     }
+    return a
   }
 
+  function flattenDepth(array, depth) {
+
+  }
+
+
+  function forEach(array, depth) {
+
+  }
 
 
 
@@ -45,9 +55,9 @@ var joamg = function () {
     unique: unique,
     uniqueBy: uniqueBy,
     flattenDeep: flattenDeep,
-    Depth:Depth,
+    flattenDepth:flattenDepth,
     gruopBy:gruopBy,
-    keyB:keyB,
+    keyBy:keyBy,
     forEach: forEach,
     map:map,
     filter:filter,
@@ -60,7 +70,7 @@ var joamg = function () {
     reduce:reduce,
     zip:zip,
     unz:unz,
- 
+    reverse, countBy,reduceRight,shuffle,isNaN, isNull, isNil, isUndefined, toArray, sum, sumBy
   }
   
 }
