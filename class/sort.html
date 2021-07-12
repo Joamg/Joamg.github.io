@@ -71,6 +71,61 @@
 
 <script>//归并排序
   function mergeSort(array) {
+    if (array.length < 2) {
+      return array
+    }
     var midIdx = array.length >> 1
+    var leftArray = array.slice(0, midIdx)
+    var rightArray = array.slice(midIdx)
+    leftArray = mergeSort(leftArray)
+    rightArray = mergeSort(rightArray)
+
+    var i = 0
+    var j = 0
+    var k = 0
+    while (i < leftArray.length && j < rightArray.length) {
+      if(leftArray[i] < rightArray[j]) {
+        array[k++] = leftArray[i++]
+      } else {
+        array[k++] = rightArray[j++]
+      }
+    }
+
+    while (i < leftArray.length) {
+      array[k++] = leftArray[i++] 
+    }
+    while (j < rightArray.length) {
+      array[k++] = rightArray[j++] 
+    }
+    return array
   }
 </script>
+
+<script> //快速排序
+  function quickSort(array) {
+    var randIdx= Math.floor(Math.random() * array.length) //确定数组随机的下标; Math.random的范围是0-1
+    var randItem = array[randIdx]               //这两行是为了从数组里面随机抽取一个数
+    var a =[]
+    var b = []
+    var c = []
+    for (var i = 0; i < array.length; i++) {
+      if (array[i] < randItem) {
+        a.push(array[i])
+      }
+    } else if (array[i] > randItem) {
+        c.push(array[i])
+    } else {
+      b.push(array[i])
+    }
+    a = quickSort(a)
+    c = quickSort(c)
+    return a.concat(b, c)
+  }
+</script>
+
+
+
+
+
+
+
