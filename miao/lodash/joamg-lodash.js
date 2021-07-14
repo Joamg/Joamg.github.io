@@ -2,13 +2,11 @@ var joamg = function () {
 
 function chunk(array, size) {
   var newarr = []
-  var a =[]
   var index = 0 
   while(index < array.length) {
     newarr.push(array.slice(index, index = index + size))
   }
-  a.push(newarr)
-  return a
+  return newarr
 }
 
 
