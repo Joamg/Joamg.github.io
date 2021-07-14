@@ -45,10 +45,6 @@ var joamg = function () {
 
 
 
-
-
-
-
   return {
     chunk: chunk,
     compact: a,
@@ -65,12 +61,6 @@ var joamg = function () {
     zip:zip,
     unzip:unzip,
     forEach:forEach,
-    map:map,
-    filter:filter,
-    reduce:reduce,
-    zip:zip,
-    unz:unz,
-    reverse, countBy,reduceRight,shuffle,isNaN, isNull, isNil, isUndefined, toArray, sum, sumBy
   }
   
 }
