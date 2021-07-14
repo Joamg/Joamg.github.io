@@ -1,14 +1,31 @@
 var joamg = function () {
   function chunk(array, size) {
-    var newarr = []
-    var a =[]
-    var index = 0 
-    while(index < array.length) {
-      newarr.push(array.slice(index, index = index + size))
+    var arr = [];
+    var j = 0;
+    for (let i = 0; i < Math.ceil(array.length / size); i++) {
+      var index = 0;
+      arr[i] = [];
+      for (; j < array.length; j++) {
+        arr[i].push(array[j]);
+        index++;
+        if (index == size) {
+          j++;
+          break;
+        }
+      }
     }
-    a.push(newarr)
-    return a
+    return arr;
   }
+  // function chunk(array, size) {
+  //   var newarr = []
+  //   var a =[]
+  //   var index = 0 
+  //   while(index < array.length) {
+  //     newarr.push(array.slice(index, index = index + size))
+  //   }
+  //   a.push(newarr)
+  //   return a
+  // }
 
 
   function compact(array) {
@@ -47,20 +64,10 @@ var joamg = function () {
 
   return {
     chunk: chunk,
-    compact: a,
-    unique: unique,
-    uniqueBy: uniqueBy,
+    compact: compact,
     flattenDeep: flattenDeep,
     flattenDepth:flattenDepth,
-    gruopBy:gruopBy,
-    keyBy:keyBy,
     forEach: forEach,
-    map:map,
-    filter:filter,
-    reduce:reduce,
-    zip:zip,
-    unzip:unzip,
-    forEach:forEach,
   }
   
 }
