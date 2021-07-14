@@ -52,4 +52,4 @@ function chunk(array, size) {
     forEach: forEach,
   }
   
-}
+}()
