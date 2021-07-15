@@ -1,5 +1,12 @@
 <!-- 随机数组  Array(100).fill(0).map(it => Math.random() * 100 | 0) -->
-
+<script> // 对数组第i和j项进行对调
+  function swap(array, i, j) {
+    var t = array[i]
+    array[i] = array[j]
+    array[j] = t
+    return array
+}
+</script>
 <script> //冒泡排序 
 /**
  * 时间复杂度: O(n * n)
@@ -101,13 +108,13 @@
   }
 </script>
 
-<script> //快速排序
+<!-- <script> //快速排序 (五分做法 空间复杂度O(n))
   function quickSort(array) {
     var randIdx= Math.floor(Math.random() * array.length) //确定数组随机的下标; Math.random的范围是0-1
     var randItem = array[randIdx]               //这两行是为了从数组里面随机抽取一个数
-    var a =[]
-    var b = []
-    var c = []
+    var a =[] //小于randItemd的数字组成的数组
+    var b = [] //等于randItem的数字组成的数组
+    var c = [] //大于randItem的数字组成的数组
     for (var i = 0; i < array.length; i++) {
       if (array[i] < randItem) {
         a.push(array[i])
@@ -121,8 +128,31 @@
     c = quickSort(c)
     return a.concat(b, c)
   }
-</script>
+</script> -->
 
+
+<script> //快速排序
+  function quickSort(array, start = 0, end = array.length - 1) {
+    if(end - start < 1) {
+      return array
+    } 
+    var pivotIdx = Math.floor(Math.random() * (end - start + 1)) + start
+    var pivot = array[pivotIdx]
+    swap(array, pivotIdx, end)
+    var i = start
+    var j = start
+    for (; j < end; j++) {
+      if(array[j] < pivot) {
+        swap(array, i, j)
+        i++
+      }
+    }
+    swap(array, i, end)
+    quickSort(array, start, i - 1)
+    quickSort(array, i + 1, end)
+    return array
+  }
+</script>
 
 
 
