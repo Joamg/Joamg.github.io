@@ -133,18 +133,17 @@
 
 <script> //快速排序
   function quickSort(array, start = 0, end = array.length - 1) {
-    if(end - start < 1) {
+    if(end - start < 1) {  //递归的结束条件
       return array
     } 
-    var pivotIdx = Math.floor(Math.random() * (end - start + 1)) + start
+    var pivotIdx = Math.floor(Math.random() * (end - start + 1)) + start  //随机挑选一个哨兵元素
     var pivot = array[pivotIdx]
-    swap(array, pivotIdx, end)
+    swap(array, pivotIdx, end) //对哨兵元素跟最后一个元素进行对调, 将最后一个座位哨兵元素
     var i = start
     var j = start
-    for (; j < end; j++) {
+    for (; j < end; j++) {   //如果
       if(array[j] < pivot) {
-        swap(array, i, j)
-        i++
+        swap(array, i++, j)
       }
     }
     swap(array, i, end)

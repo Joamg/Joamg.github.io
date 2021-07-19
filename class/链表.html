@@ -1,0 +1,42 @@
+<script> //创建一个空链表
+  // function createListNode(val, next = null) {
+  //   var node = {
+  //     val: val,
+  //     next: next,
+  //   }
+  //   return node
+  // }
+//或者简写为
+  function createListNode(val) {
+    return {
+      val: val,
+      next: null,
+    }
+  }
+
+  function arrayToList(array) {
+    var dummy = createListNode(0)
+    var prevNode = dummy
+    for (var i = 0; i < array.length; i++) {
+      var  node = createListNode(array[i])  //由数组元素创建新的链表节点 
+      prevNode.next = node
+      prevNode = node
+     }
+     return dummy
+  }
+
+  function arrayToList2(array) {
+    if(array.length == 0) {
+      return null
+    }
+    var nodes = []
+    for(var i = 0; i < array.length; i++) {
+      nodes.push(createListNode(array[i]))
+    }
+
+    for (var i = 0; i < array.length - 1; i++) {
+      nodes[i].next = nodes[i + 1]
+    }
+    return nodes[0]
+  }
+</script>

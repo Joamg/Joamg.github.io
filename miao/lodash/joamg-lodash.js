@@ -1,23 +1,23 @@
 var joamg = function () {
 
 function chunk(array, size) {
-  var newarr = []
+  var result = []
   var index = 0 
   while(index < array.length) {
-    newarr.push(array.slice(index, index = index + size))
+    result.push(array.slice(index, index = index + size))
   }
-  return newarr
+  return result
 }
 
 
   function compact(array) {
-    var a = []
+    var result = []
       for(i = 0; i < array.length; i++) {
         if ((typeof array[i] !== String) && Number(array[i]) == parseFloat(array[i])) {
-          a.push(array[i])
+          result.push(array[i])
         }
       }
-      return a
+      return result
   }
 
 
@@ -47,9 +47,16 @@ function chunk(array, size) {
   return {
     chunk: chunk,
     compact: compact,
+    unique: unique,
     flattenDeep: flattenDeep,
     flattenDepth:flattenDepth,
     forEach: forEach,
   }
   
 }()
+
+// chunk, compact, unique,uniqueBy, flattenDeep/Depth, gruopBy, keyByforEach, map, filter, reduce, zip, unzip
+// keys, values, every, some, fill
+// sortBy
+// isEqual
+// reverse, countBy,reduceRight,shuffle,isNaN, isNull, isNil, isUndefined, toArray, sum, sumBy
