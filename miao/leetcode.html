@@ -709,7 +709,23 @@ function map(array , transform) {
   }
 </script>
 
+<script>
+  var isBalanced = function(root) {
+    if(root) {
+      var leftDepth = depth(root.left)
+      var rightDepth = depth(root.right)
+      return isBalanced(root.left) && isBalanced(root.right) && Math.abs(leftDepth - rightDepth) < 2  
+    }
+    return true
+};
 
+function depth(root) {
+    if(root) {
+        return 1 + Math.max(depth(root.left), (root.right))
+    }
+    return 0
+}
+</script>
 
 
 
